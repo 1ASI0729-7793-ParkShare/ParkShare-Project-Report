@@ -19,3 +19,26 @@ La gestión del proyecto incluye el código fuente, documentación, prototipos y
 | Software Testing | Gherkin | Lenguaje de especificación para definir escenarios de prueba BDD (Behavior-Driven Development) basados en historias de usuario (control remoto, automatizaciones por horario y alertas de consumo). | Estándar / DSL | https://cucumber.io/docs/gherkin/reference |
 | Software Documentation | GitHub | Repositorio central del proyecto para el control de versiones distribuido, registro de commits, trabajo colaborativo y alojamiento de la documentación del sistema. | SaaS | https://github.com |
 | Software Deployment | GitHub Pages | Servicio de alojamiento y despliegue continuo para la Landing Page pública del producto, permitiendo exponer la propuesta de valor de DomotiCore. | SaaS | https://pages.github.com |
+
+
+### 5.1.2. Source Code Management
+
+### 5.1.3. Source Code Style Guide and Conventions
+
+### 5.1.4. Software Deployment Configuration
+
+## 5.2. Landing Page, Services & Applications Implementation
+
+### 5.2.1. Sprint 1
+
+#### 5.2.1.1. Sprint Palanning 1
+
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+#### 5.2.1.3. Sprint Backlog 1
+
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+#### 5.2.1.5.  Execution Evidence for Sprint Review
+
+
