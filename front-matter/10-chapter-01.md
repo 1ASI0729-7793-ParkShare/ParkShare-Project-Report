@@ -108,13 +108,43 @@ E. Feature Assumptions
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
 
-• Búsqueda de estacionamientos: creemos que una herramienta de búsqueda y filtros permitirá reducir el tiempo y esfuerzo que los conductores emplean para encontrar estacionamiento. Validaremos esta hipótesis mediante pruebas con usuarios y recopilando sus comentarios sobre la facilidad y rapidez de búsqueda.
+1. Búsqueda de estacionamientos: 
+   
+   **Creemos que** una herramienta de búsqueda con filtros avanzados (ubicación, precio, horario) reducirá significativamente el tiempo que los conductores invierten en encontrar estacionamiento.  
+   
+   **Validaremos esta hipótesis** con una prueba de usabilidad controlada con una muestra de 20 conductores que utilicen la plataforma para simular una búsqueda real. 
+   
+   **Sabremos que hemos tenido éxito** si al menos el 80% de los participantes completa la tarea de búsqueda en menos de 3 minutos, y la métrica de satisfacción supera los 75 puntos. 
 
-• Mapa de estacionamientos: creemos que un mapa interactivo permitirá a los conductores identificar alternativas cercanas y seleccionar un estacionamiento de acuerdo con su ubicación. Validaremos esta hipótesis observando el uso del mapa y la opinión de los usuarios.
+<br>
 
-• Publicación de espacios: creemos que permitir a los propietarios publicar sus espacios facilitará la generación de ingresos mediante estacionamientos que permanecen disponibles. Validaremos esta hipótesis mediante la cantidad de espacios publicados y los comentarios de los propietarios.
+2. Mapa de estacionamientos: 
+   
+   **Creemos que** un mapa interactivo en tiempo real permitirá a los conductores identificar alternativas cercanas de manera más eficiente que una lista de texto.
+   
+   **Validaremos esta hipótesis** un test A/B con 30 conductores donde la mitad use el mapa y la otra mitad use la lista tradicional para seleccionar un estacionamiento. 
+   
+   **Sabremos que hemos tenido éxito** si el grupo que utiliza el mapa interactivo selecciona un estacionamiento un 30% más rápido y reporta una tasa de error menor al 5% al identificar la ubicación exacta.
 
-• Reserva y gestión: creemos que la posibilidad de reservar brindará mayor seguridad y comodidad a los conductores, mientras que las herramientas de gestión permitirán a los propietarios organizar sus espacios y reservas. Validaremos esta hipótesis mediante el uso recurrente de las reservas y las herramientas de gestión.
+<br>
+
+3. Publicación de espacios:  
+   
+   **Creemos que** una interfaz simplificada para publicar espacios permitirá a los propietarios monetizar sus cocheras sin necesidad de asistencia técnica.
+   
+   **Validaremos esta hipótesis** una prueba beta cerrada con 15 propietarios de cocheras a los que se les pedirá registrar su espacio y configurar su disponibilidad.
+   
+   **Sabremos que hemos tenido éxito** si el 70% de los propietarios logra publicar su cochera de forma autónoma en menos de 10 minutos, sin reportar errores críticos en el proceso.
+
+<br>
+
+4. Reserva y gestión: 
+   
+   **Creemos que** la posibilidad de reservar y pagar por adelantado aumentará la confianza y comodidad de los conductores, reduciendo la incertidumbre al llegar al destino.
+   
+   **Validaremos esta hipótesis** con una encuesta post-uso a 50 conductores que hayan completado una reserva a través de la plataforma.
+   
+   **Sabremos que hemos tenido éxito** si el 85% de los usuarios indica que se siente "Seguro" o "Muy Seguro" con la reserva anticipada, y la tasa de cancelación de reservas se mantiene por debajo del 10%.
 
 #### 1.2.2.4 Lean UX Canvas
 
