@@ -447,6 +447,8 @@ En la implementación final se puede apreciar el uso consistente de una paleta d
 <div style="text-align:center;"><img src="../assets/landing-page/Landing-page-mockup3.png" alt="texto"></div>
 <div style="text-align:center;"><img src="../assets/landing-page/Landing-page-mockup4.png" alt="texto"></div>
 
+Link Landing Page: https://1asi0729-7793-parkshare.github.io/landing-page-ParkShare/
+
 ### 4.4. Web Applications UX/UI Design.
 
 ### 4.4.1. Web Applications Wireframes.
