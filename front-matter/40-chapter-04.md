@@ -742,7 +742,7 @@ En esta sección se presenta el diseño orientado a la solución, desarrollado a
 
 La solución fue modelada considerando un enfoque basado en bounded contexts, permitiendo organizar las responsabilidades del sistema en módulos funcionales relacionados con la gestión de usuarios, la administración de espacios de estacionamiento, la búsqueda y visualización en mapa interactivo, las reservas y disponibilidad, los pagos y facturación, y las notificaciones. Cada diagrama incluye clases, atributos, métodos, relaciones, multiplicidades y niveles de acceso. Para la elaboración de los diagramas se utilizará PlantUML.
 
-<div style="text-align:center;"><img src="../assets/class_diagram.png" alt="texto"></div>
+<div style="text-align:center;"><img src="../assets/parkShare-class_diagram.png" alt="texto"></div>
 
 ### 4.8. Database Design.
 
