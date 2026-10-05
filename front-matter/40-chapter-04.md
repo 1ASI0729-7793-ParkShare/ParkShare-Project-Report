@@ -753,6 +753,6 @@ El objetivo es garantizar la integridad y organización de la información utili
 
 Para la elaboración de los diagramas de base de datos se utilizará PlantUML, empleando diagramas entidad-relación para representar tablas, columnas, claves primarias, claves foráneas y relaciones entre entidades.
 
-<div style="text-align:center;"><img src="../assets/database_diagram.png" alt="texto"></div>
+<div style="text-align:center;"><img src="../assets/parkShare-database-diagram.png" alt="texto"></div>
 
 
