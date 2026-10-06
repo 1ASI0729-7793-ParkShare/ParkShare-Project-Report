@@ -28,10 +28,37 @@ La gestión del proyecto incluye el código fuente, documentación, prototipos y
 ### 5.1.4. Software Deployment Configuration
 
 ## 5.2. Landing Page, Services & Applications Implementation
+En esta seccion se va a describir el proceso de implementacion del Proyecto ParkShare, donde se incluira el desarrollo, documentacion y despliegue del Landing Page.
+
+Para este avance se implemento la primera version del Landing Page. El desarrollo se realizo utilizando GitHub como herramienta de control de versiones.
 
 ### 5.2.1. Sprint 1
+En esta seccion se presentara el avance del Sprint 1 en terminos de desarrollo del producto y el trabajo colaborativo del equipo.
 
-#### 5.2.1.1. Sprint Palanning 1
+Durante este sprint se realizo la implementacion de la primera version del Landing Page, que se enfocara en presenta la propuesta de valor del sistema.
+
+Asimismo se incluiran evidencias relacionadas con la planificacion del sprint, la organizacion del equipo, el desarrollo realizado, asi como los resultados obtenidos y la colaboracion.
+
+#### 5.2.1.1. Sprint Planning 1
+En esta seccion se describen los principales acuerdos y definiciones realizadas durante el Sprint Planning del Sprint 1, donde nos enfocaremos en la implementacion del Landing Page.
+
+ Campo | Detalle |
+|------|--------|
+| **Sprint #** | Sprint 1 |
+| **Sprint Planning Background** |  |
+| Date | 2026-09-26 |
+| Time | 16:30 |
+| Location | Reunión virtual (Discord) |
+| Prepared By | Daril Johan Palomino Vilcañaupa |
+| Attendees (to planning meeting) | Palomino Vilcañaupa, Daril Johan -  Tello Palacios, Fabrizio Rafael - Checa Burga, Oscar Diego - Yanac Flores, Gabriel Stefano - Urviola Condori, Mateo Sebastian |
+| **Sprint 1 – Review Summary** | En esta entrega se tomo encuenta el Product Backlog definido y los diseños web de la landing page. |
+| **Sprint 1 – Retrospective Summary** | Para esta entrega no se aplico. No obstante, el equipo se enfoco en la distribucion de tareas y comunicacion constante. |
+| **Sprint Goal & User Stories** |  |
+| Sprint 1 Goal | Our goal is to build a fully functional and responsive landing page that clearly communicates ACME Industries' value proposition through its ParkShare solution. We believe this site will allow potential customers to accurately understand the product's benefits. We will confirm the success of this objective when users can view the platform, navigate smoothly between its main sections, and access it correctly from any device. |
+| User Stories incluidas en el Sprint | US31: Visualizar Landing Page; US32: Navegar entre secciones del Landing Page; US33: Visualización responsive del Landing Page |
+| **Sprint 1 speed of work** | 9 Story Points |
+| **The sum of history points** | 9 Story Points |
+
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -40,5 +67,3 @@ La gestión del proyecto incluye el código fuente, documentación, prototipos y
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 #### 5.2.1.5.  Execution Evidence for Sprint Review
-
-
