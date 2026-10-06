@@ -149,9 +149,40 @@ En esta seccion se describen los principales acuerdos y definiciones realizadas 
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
+Para este primer sprint, los frentes de trabajo se enfocaron en la construcción integral de la Landing Page de ParkShare, abarcando la maquetación visual, el flujo de navegación entre módulos y la adaptabilidad para múltiples pantallas (responsive design). 
+
+
+A continuación, se presenta la distribución de roles según las responsabilidades asignadas en el sprint (L: Líder, C: Colaborador, A: Apoyo, X: Sin participación directa)
+
+| Team Member (Last Name, First Name) | GitHub Username | Estructura del Landing Page | Navegación entre secciones | Diseño Responsive |
+| :--- | :--- | :---: | :---: | :---: |
+| **Palomino Vilcañaupa, Daril Johan** | `Daroh19` | C| C | C |
+| **Urviola Condori, Mateo Sebastian** | `BeyaminUv` | C | C | C |
+| **Checa Burga, Oscar Diego** | `OscarCheca` | C | L | L |
+| **Tello Palacios, Fabrizio Rafael** | `F4bris` | C | C | C |
+| **Yanac Flores, Gabriel Stefano** | `u20241d945` | L | C | L |
+
+
 #### 5.2.1.3. Sprint Backlog 1
 
+Durante el Sprint 1, la prioridad principal fue el desarrollo y despliegue de la Landing Page de ParkShare, diseñada para exponer de forma transparente, intuitiva y accesible la propuesta de valor del sistema, respondiendo a las necesidades de los conductores urbanos y de los propietarios de cocheras en Lima.
+
+El seguimiento del Sprint Backlog se administró de manera ágil mediante la plataforma Trello. A través de un flujo estructurado en columnas (To-Do, In Progress y Done), las User Stories del portal web se dividieron en tareas técnicas específicas de maquetación, diseño y maquetado de componentes interactivos.
+
+
 #### 5.2.1.4. Development Evidence for Sprint Review
+
+En este Sprint se logró la implementación de la Landing Page de ParkShare, estructurando su arquitectura web mediante HTML5, CSS3 y JavaScript, así como la navegación fluida entre sus secciones principales y el desarrollo del diseño adaptativo  para dispositivos móviles y de escritorio.
+
+
+| Repository | Commit ID | Commit Message | Commit Message Body | Commit Date |
+| :--- | :--- | :--- | :--- | :--- |
+| **Daroh19/Proyect-Park-Share** | `6ad44ab` | `feat: add final sections for Proyect-Park-Share.` | Se implemento las seccciones de Footer y questions en la pagina web. | 18/09/2026 |
+| **BeyaminUv/Proyect-Park-Share** | `7b1d344` | `feat(css2): add styles for toast notifications and responsive adjustments in styles.css` | Implementacion de secciones de css de la landing page. | 18/09/2026 |
+| **OscarCheca/Proyect-Park-Share** | `becd907` | `docs: add images and initial documentation and docs: add javascript for landing page` | Implementacion de de seccion de documentacion dentro de la landing page. | 19/09/2026 |
+| **F4bris/Proyect-Park-Share** | `c047492` | `feat(css): implement CSS variables for color palette, typography, and layout styles` | Implementacion de variables de colores , topografia y javascript. | 19/09/2026 |
+| **u20241d945/Proyect-Park-Share** | `becd907` | `feat: Add initial index.html for Proyect-Park-Share` | Se implementan las secciones principales del index(hero +nabvar, Map & Parking cards and Video showcase section). | 19/09/2026 |
+
 
 #### 5.2.1.5.  Execution Evidence for Sprint Review
 
