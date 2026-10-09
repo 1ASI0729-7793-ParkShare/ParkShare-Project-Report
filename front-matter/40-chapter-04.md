@@ -716,6 +716,8 @@ Las User Stories **US27–US30** corresponden al Landing Page de ParkShare y no 
 
 El Landing Page tiene como objetivo presentar la propuesta de valor del producto, explicar su funcionamiento para conductores y propietarios y dirigir a los visitantes hacia la Web Application. Por ello, funciona como un medio de presentación y captación de usuarios, pero no representa un área independiente del dominio de negocio.
 
+Link landing page: https://1asi0729-7793-parkshare.github.io/landing-page-ParkShare/
+
 ### 4.6.2. Software Architecture Context Diagram.
 
 ![ParkShare Context Diagram](../assets/chapter-04/SystemContext-dark.png)
