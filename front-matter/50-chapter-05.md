@@ -11,14 +11,14 @@ La gestión del proyecto incluye el código fuente, documentación, prototipos y
 | Project Management | Trello | Gestión e itinerario de tareas del proyecto mediante tableros organizados por estados (To-Do, In Progress, Done), clave para el seguimiento de entregables como el reporte y la landing page. | SaaS | https://trello.com |
 | Team Communication | Discord | Plataforma principal de comunicación remota para la realización de reuniones de equipo sincrónicas, planificación de Sprints y coordinación general. | SaaS / Desktop | https://discord.com/ |
 | Requirements Management | Miro | Estructuración de ideas, diagramación de flujos de sistema, análisis del negocio y ejecución de la sesión de Event Storming para el ecosistema IoT. | SaaS | https://miro.com |
-| Requirements Management | Structurizr | Modelado de la arquitectura de software del sistema DomotiCore bajo el modelo C4, representando los componentes clave (dashboard, gateway, nodos IoT y servicios de monitoreo). | SaaS / Desktop | https://structurizr.com |
+| Requirements Management | Structurizr | Modelado de la arquitectura de software del sistema ParkShare bajo el modelo C4, representando los componentes clave (dashboard, gateway, nodos IoT y servicios de monitoreo). | SaaS / Desktop | https://structurizr.com |
 | Product UX/UI Design | Figma | Diseño visual y prototipado interactivo de las interfaces del sistema, incluyendo el dashboard centralizado, paneles de control de dispositivos y visualización de consumo energético. | SaaS / Desktop | https://www.figma.com |
 | Product UX/UI Design | Lucidchart | Elaboración de diagramas de flujo de trabajo, arquitectura técnica y diseño de procesos operativos del sistema. | SaaS | https://www.lucidchart.com |
 | Software Development | HTML5 / CSS3 / JavaScript | Lenguajes y estándares base utilizados para el desarrollo del frontend web, las interfaces de usuario y la Landing Page del producto. | Lenguajes / Estándares | https://developer.mozilla.org/es/docs/Web |
 | Software Development | WebStorm | Entorno de desarrollo integrado (IDE) principal utilizado para la programación, edición y depuración del código fuente del frontend. | Desktop | https://www.jetbrains.com/webstorm/download |
 | Software Testing | Gherkin | Lenguaje de especificación para definir escenarios de prueba BDD (Behavior-Driven Development) basados en historias de usuario (control remoto, automatizaciones por horario y alertas de consumo). | Estándar / DSL | https://cucumber.io/docs/gherkin/reference |
 | Software Documentation | GitHub | Repositorio central del proyecto para el control de versiones distribuido, registro de commits, trabajo colaborativo y alojamiento de la documentación del sistema. | SaaS | https://github.com |
-| Software Deployment | GitHub Pages | Servicio de alojamiento y despliegue continuo para la Landing Page pública del producto, permitiendo exponer la propuesta de valor de DomotiCore. | SaaS | https://pages.github.com |
+| Software Deployment | GitHub Pages | Servicio de alojamiento y despliegue continuo para la Landing Page pública del producto, permitiendo exponer la propuesta de valor de ParkShare. | SaaS | https://pages.github.com |
 
 
 ### 5.1.2. Source Code Management
@@ -94,7 +94,7 @@ La publicación pública de la Landing Page (desarrollada con el marco de trabaj
 
 - Estructuración del Repositorio: Creación e inicialización del repositorio remoto bajo la organización oficial de la startup (ACME Industries).
 
-- Compilación de Producción: Ejecución del comando de construcción en Angular para generar los artefactos finales optimizados de producción (archivos estáticos HTML, JavaScript y CSS) dentro del directorio objetivo (dist/learning-center/browser o equivalente del proyecto).
+- Compilación de Producción: Ejecución del comando de construcción en Angular para generar los artefactos finales optimizados de producción (archivos estáticos HTML, JavaScript y CSS) dentro del directorio objetivo (dist/ParkShare/browser o equivalente del proyecto).
 
 - Gestión de Ramas de Despliegue: Configuración del flujo de publicación asociando la rama principal (main) o la rama especializada de distribución (gh-pages).
 
@@ -142,7 +142,7 @@ En esta seccion se describen los principales acuerdos y definiciones realizadas 
 | Campo | Detalle |
 | :--- | :--- |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | Nuestro objetivo se enfoca en construir una Landing Page totalmente funcional y adaptativa que comunique con claridad la propuesta de valor de ParkShare para conductores y propietarios[cite: 173, 174]. Consideramos que esto permitirá a los visitantes comprender de forma precisa los beneficios del servicio[cite: 173, 174]. Confirmaremos el éxito de este objetivo cuando los usuarios puedan explorar el sitio público, interactuar sin fricciones entre sus secciones principales y acceder de manera óptima desde cualquier dispositivo[cite: 63, 64]. |
+| **Sprint 1 Goal** | Nuestro objetivo se enfoca en construir una Landing Page totalmente funcional y adaptativa que comunique con claridad la propuesta de valor de ParkShare para conductores y propietarios[cite: 173, 174]. Consideramos que esto permitirá a los visitantes comprender de forma precisa los beneficios del servicio[cite: 173, 174]. Confirmaremos el éxito de este objetivo cuando los usuarios puedan explorar el sitio público, interactuar sin fricciones entre sus secciones principales y acceder de manera óptima desde cualquier dispositivo. |
 | **User Stories incluidas en el Sprint** | **US27**: Información para conductores en el Landing Page; **US28**: Información para propietarios en el Landing Page; **US29**: Información sobre funcionamiento y confianza; **US30**: Redirección desde el Landing Page a la Web Application. |
 | **Sprint 1 Velocity** | 8 Story Points |
 | **Sum of Story Points** | 8 Story Points |
@@ -227,5 +227,109 @@ Seccion Footer + Questions
 ![footer](../report/assets/landing8.png)
 
 
+### 5.2.2. Sprint 2
+En esta sección se presenta el avance del Sprint 2 en términos de desarrollo del producto y trabajo colaborativo del equipo.
 
+Durante este sprint se implementó la primera versión de la Web Application de ParkShare, desarrollada en Angular con Angular Material, internacionalización (inglés y español) y una arquitectura basada en Domain-Driven Design. El avance se centró en la estructura general de la aplicación (barra lateral de navegación y selector de rol Conductor / Propietario) y en el módulo de perfil del conductor, que incluye el registro de su vehículo y la carga de documentos de verificación.
+
+Asimismo, se incluyen evidencias de la planificación del sprint, la organización del equipo, el desarrollo realizado y los resultados obtenidos.
+
+#### 5.2.2.1. Sprint Planning 2
+En esta sección se describen los principales acuerdos y definiciones realizados durante el Sprint Planning del Sprint 2, donde el equipo se enfocó en la implementación de la Web Application para el rol de Conductor.
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 2 |
+| **Sprint Planning Background** | |
+| Date | [COMPLETAR: AAAA-MM-DD] |
+| Time | [COMPLETAR: HH:MM] |
+| Location | Reunión virtual (Discord) |
+| Prepared By | [COMPLETAR: nombre del integrante] |
+| Attendees (to planning meeting) | Palomino Vilcañaupa, Daril Johan - Tello Palacios, Fabrizio Rafael - Checa Burga, Oscar Diego - Yanac Flores, Gabriel Stefano - Urviola Condori, Mateo Sebastian |
+| **Sprint 2 – Review Summary** | En esta entrega se tomó en cuenta el Sprint 1 (Landing Page), el Product Backlog definido y los prototipos de la Web Application diseñados en el capítulo IV. |
+| **Sprint 2 – Retrospective Summary** | [COMPLETAR: qué funcionó, qué no y qué se mejorará en el siguiente sprint] |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | Nuestro objetivo es construir la primera versión de la Web Application de ParkShare, con una navegación clara por rol y un perfil de conductor funcional. Consideramos que esto permitirá a los conductores mantener actualizados los datos de su vehículo y gestionar sus documentos de verificación. Confirmaremos el éxito de este objetivo cuando el conductor pueda consultar, editar y guardar la información de su vehículo, y cargar sus documentos, con los datos persistidos en la Fake Api. |
+| **User Stories incluidas en el Sprint** | **US04**: Registro de vehículo; **US03**: Verificación de identidad (carga de documentos y estados de revisión). |
+| **Sprint 2 Velocity** | [COMPLETAR según Trello] |
+| **Sum of Story Points** | 11 Story Points (US04: 3, US03: 8) |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Para este sprint, los frentes de trabajo se enfocaron en la estructura de la Web Application, el módulo de perfil del conductor y la API simulada que respalda sus datos.
+
+A continuación, se presenta la distribución de roles según las responsabilidades asignadas en el sprint (L: Líder, C: Colaborador, A: Apoyo, X: Sin participación directa)
+
+| Team Member | GitHub Username | Layout y navegación | Perfil y vehículo (US04) | Verificación de documentos (US03) | API simulada (json-server) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Palomino Vilcañaupa, Daril Johan** | `Daroh19` | … | … | … | … |
+| **Urviola Condori, Mateo Sebastian** | `BeyaminUv` | … | … | … | … |
+| **Checa Burga, Oscar Diego** | `OscarCheca` | … | … | … | … |
+| **Tello Palacios, Fabrizio Rafael** | `F4bris` | C | L | C | C |
+| **Yanac Flores, Gabriel Stefano** | `u20241d945` | … | … | … | … |
+
+#### 5.2.2.3. Sprint Backlog 2
+
+Durante el Sprint 2, la prioridad principal fue el desarrollo de la primera versión de la Web Application de ParkShare para el rol de Conductor, respondiendo a la necesidad de mantener un perfil vigente y confiable dentro de la plataforma.
+
+El seguimiento del Sprint Backlog se administró mediante Trello, con las columnas To-Do, In Progress y Done. Las User Stories se dividieron en las siguientes tareas técnicas:
+
+| User Story | Tarea técnica | Estado |
+| :--- | :--- | :---: |
+| Transversal | Configuración del proyecto Angular, Angular Material, tema y estructura por bounded contexts (`shared`, `profile`) | [COMPLETAR] |
+| Transversal | Layout con barra lateral, selector de rol Conductor / Propietario y rutas por vista | [COMPLETAR] |
+| Transversal | Internacionalización con ngx-translate (EN / ES) y selector de idioma | [COMPLETAR] |
+| US04 | Entidad `Profile`, assembler, endpoint y servicio de infraestructura | [COMPLETAR] |
+| US04 | Vista de detalle del perfil con datos del vehículo registrado | [COMPLETAR] |
+| US04 | Formulario de edición del vehículo con validaciones (placa, modelo, tipo) | [COMPLETAR] |
+| US03 | Entidad `VerificationDocument`, assembler, endpoint y servicio | [COMPLETAR] |
+| US03 | Lista de documentos con estado (Verificado, En revisión, Rechazado) y carga de archivo | [COMPLETAR] |
+| Transversal | API simulada con json-server (`db.json`) | [COMPLETAR] |
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+En este Sprint se logró la implementación de la estructura base de la Web Application de ParkShare y del módulo de perfil del conductor, aplicando una arquitectura por capas (domain, application, infrastructure y presentation) separada en bounded contexts, con estado manejado mediante signals y sin valores fijos en el código (URLs en archivos de entorno y textos en archivos de idioma).
+
+| Repository | Commit ID | Commit Message | Commit Message Body | Commit Date |
+| :--- | :--- | :--- | :--- | :--- |
+| [COMPLETAR] | `[COMPLETAR]` | `[COMPLETAR]` | [COMPLETAR] | [COMPLETAR] |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+En el Sprint 2 se logró implementar la primera versión funcional de la Web Application de ParkShare para el rol de Conductor. A continuación, se presentan las evidencias visuales de las principales vistas implementadas:
+
+Perfil del conductor: datos del vehículo registrado y documentos de verificación
+
+![Perfil del conductor](../report/assets/sprint2-perfil-detalle.png)
+
+Edición del vehículo
+
+![Edición del vehículo](../report/assets/sprint2-perfil-edicion.png)
+
+Vista en inglés (internacionalización)
+
+![Vista en inglés](../report/assets/sprint2-perfil-en.png)
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante este sprint, los datos del perfil se consumen desde una API REST simulada con json-server. La URL base y las rutas de cada recurso se definen en los archivos de entorno de la aplicación.
+
+| Recurso | Método | Ruta | Descripción |
+| :--- | :--- | :--- | :--- |
+| Perfil | GET | `/profiles` | Obtiene los perfiles registrados |
+| Perfil | PUT | `/profiles/{id}` | Actualiza los datos del vehículo del perfil |
+| Documentos | GET | `/verificationDocuments` | Obtiene los documentos de verificación |
+| Documentos | PUT | `/verificationDocuments/{id}` | Registra el archivo cargado y pasa el documento a estado "En revisión" |
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+[COMPLETAR: describir como se desplego la Web Application (se despliega en github pages porsiaca) con los pasos realizados: compilación de producción con Angular (`dist/parkshare/browser`), configuración de la rama de publicación y activación del servicio.]
+
+Link de la Web Application: [COMPLETAR]
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+[COMPLETAR: captura del grafico de contribuciones de GitHub del sprint y breve descripción de la participacion de cada uno.]
+
+![Contribuciones Sprint 2](../report/assets/sprint2-contribuciones.png)
 

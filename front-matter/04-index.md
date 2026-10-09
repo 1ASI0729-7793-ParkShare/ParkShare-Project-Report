@@ -19,7 +19,7 @@
 ## [Capítulo II: Requirements Elicitation & Analysis](/front-matter/20-chapter-02.md)
 
 
-- [2.1. Competidores]()
+- [2.1. Competidores](/front-matter/20-chapter-02.md)
   - [2.1.1. Análisis competitivo]()
   - [2.1.2. Estrategias y tácticas frente a competidores]()
 - [2.2. Entrevistas]()
@@ -91,10 +91,20 @@
     - [5.2.1.4. Development Evidence for Sprint Review]()
     - [5.2.1.5. Execution Evidence for Sprint Review]()
     - [5.2.1.6. Services Documentation Evidence for Sprint Review]()
-  - 
+  
     - [5.2.1.6. Services Documentation Evidence for Sprint Review]()
     - [5.2.1.7. Software Deployment Evidence for Sprint Review]()
     - [5.2.1.8. Team Collaboration Insights during Sprint]()
+  
+   - [5.2.2. Sprint 2]()
+      - [5.2.2.1. Sprint Planning 2]()
+      - [5.2.2.2. Aspect Leaders and Collaborators]()
+      - [5.2.2.3. Sprint Backlog 2]()
+      - [5.2.2.4. Development Evidence for Sprint Review]()
+      - [5.2.2.5. Execution Evidence for Sprint Review]()
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review]()
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review]()
+      - [5.2.2.8. Team Collaboration Insights during Sprint]()
 - [5.3. Validation Interviews]()
   - [5.3.1. Diseño de entrevistas]()
   - [5.3.2. Registro de entrevistas]()

@@ -381,7 +381,7 @@ La barra de navegación ajusta su distribución según la pantalla (desktop, tab
 
 **4.3.1 Landing Page Wireframe**
 
-La _landing page_ de Proyect-Park-Share presenta una estructura clara y orientada a la conversión, iniciando con una sección principal (_Hero Section_) que introduce la solución para la reserva de estacionamientos seguros y el alquiler de cocheras privadas en Lima, resaltando beneficios como el ahorro de tiempo, la transparencia en tarifas y la conexión con propietarios verificados[cite: 5].
+La _landing page_ de Proyect-Park-Share presenta una estructura clara y orientada a la conversión, iniciando con una sección principal (_Hero Section_) que introduce la solución para la reserva de estacionamientos seguros y el alquiler de cocheras privadas en Lima, resaltando beneficios como el ahorro de tiempo, la transparencia en tarifas y la conexión con propietarios verificados.
 
 ### Estructura y Secciones del Wireframe
 
@@ -489,8 +489,7 @@ Pantallas:
 <br>
 <br>
 
-**User Goal:** El conductor actualiza la información de su vehículo y verifica su identidad para mantener su perfil vigente en SafeStep.
-
+**User Goal:** El conductor actualiza la información de su vehículo y verifica su identidad para mantener su perfil vigente en ParkShare.
 
 
 <div align="center"><img src="../assets/app-web/perfil.png" alt="wireflow reserva">
@@ -520,7 +519,7 @@ Pantallas:
 
 ### 4.4.3. Web Applications User Flow Diagrams.
 
-En esta sección se presentan los User Flow Diagrams de SafeStep, elaborados a partir de los User Personas y sus objetivos principales. Cada diagrama representa el camino que sigue un usuario para completar una tarea específica dentro de la aplicación, mostrando los pasos, las decisiones y las rutas alternativas que puede tomar.
+En esta sección se presentan los User Flow Diagrams de ParkShare, elaborados a partir de los User Personas y sus objetivos principales. Cada diagrama representa el camino que sigue un usuario para completar una tarea específica dentro de la aplicación, mostrando los pasos, las decisiones y las rutas alternativas que puede tomar.
 
 <br>
 
@@ -530,7 +529,7 @@ En esta sección se presentan los User Flow Diagrams de SafeStep, elaborados a p
 
 <br>
 
-Este flujo describe el camino que sigue el conductor desde que ingresa a SafeStep hasta que completa una reserva. Comienza con el login, continúa con la búsqueda de cocheras mediante filtros de ubicación, fecha y hora, y avanza hacia la selección de una cochera y la confirmación del pago. Incluye rutas alternativas para el caso en que no haya resultados disponibles o el pago falle, lo que permite al usuario corregir su búsqueda o reintentar la operación sin perder el contexto.
+Este flujo describe el camino que sigue el conductor desde que ingresa a ParkShare hasta que completa una reserva. Comienza con el login, continúa con la búsqueda de cocheras mediante filtros de ubicación, fecha y hora, y avanza hacia la selección de una cochera y la confirmación del pago. Incluye rutas alternativas para el caso en que no haya resultados disponibles o el pago falle, lo que permite al usuario corregir su búsqueda o reintentar la operación sin perder el contexto.
 
 <br>
 <br>
@@ -581,7 +580,7 @@ Este flujo describe cómo el propietario revisa los ingresos generados por sus c
 
 ### 4.5. Web Applications Prototyping.
 
-En esta sección se presentan los prototipos de UI desarrollados en Figma para la aplicación web de SafeStep, tanto en su versión Desktop como Mobile. Los prototipos incluyen simulación de interacción y navegación, alineados con los User Flow Diagrams definidos previamente. El objetivo es demostrar cómo los usuarios pueden completar sus tareas principales a través de los flujos diseñados.
+En esta sección se presentan los prototipos de UI desarrollados en Figma para la aplicación web de ParkShare, tanto en su versión Desktop como Mobile. Los prototipos incluyen simulación de interacción y navegación, alineados con los User Flow Diagrams definidos previamente. El objetivo es demostrar cómo los usuarios pueden completar sus tareas principales a través de los flujos diseñados.
 
 <div align="center"><img src="../assets/app-web/video_prototipo.png" alt="prototipo web">
   <p>
