@@ -47,6 +47,101 @@ main
        └── otras ramas de trabajo
 ```
 
+La rama `main` contiene las versiones consolidadas y listas para ser consideradas como entregables estables del proyecto. Por otro lado, la rama `develop` se utiliza como punto de integración de los cambios desarrollados por los integrantes del equipo antes de incorporarlos a `main`.
+
+Para implementar nuevas funcionalidades, cada integrante crea una rama independiente a partir de `develop`, utilizando un nombre descriptivo relacionado con la funcionalidad o bounded context asignado.
+
+En el repositorio del frontend, por ejemplo, se han utilizado ramas como:
+
+```text
+feature/identity-and-access
+feature/parking-space-management
+feature/reputation&notifications
+```
+
+Cada una de estas ramas representa un conjunto funcional independiente de la aplicación. De esta manera, el desarrollo de un bounded context puede realizarse sin interferir directamente con el trabajo de otros integrantes.
+
+El flujo de trabajo seguido para una nueva funcionalidad es el siguiente:
+
+```text
+develop
+   │
+   ├── feature/identity-and-access
+   │
+   ├── feature/parking-space-management
+   │
+   └── feature/reputation&notifications
+          │
+          ▼
+       desarrollo
+          │
+          ▼
+   integración en develop
+          │
+          ▼
+         main
+```
+
+Antes de comenzar el desarrollo de una funcionalidad, el integrante actualiza la rama `develop` y crea su rama de trabajo:
+
+```bash
+git checkout develop
+git pull origin develop
+git checkout -b feature/nombre-de-la-feature
+```
+
+Una vez completados y verificados los cambios, estos se registran mediante commits y se envían al repositorio remoto:
+
+```bash
+git add .
+git commit -m "feat(scope): description"
+git push origin feature/nombre-de-la-feature
+```
+
+Posteriormente, la funcionalidad es integrada nuevamente a `develop`, donde puede ser validada junto con los demás componentes del sistema.
+
+Durante el desarrollo de la aplicación web, por ejemplo, el bounded context **Parking Space Management** fue trabajado inicialmente en la rama:
+
+```text
+feature/parking-space-management
+```
+
+y posteriormente integrado a `develop`, permitiendo consolidar funcionalidades relacionadas con la publicación, edición, disponibilidad y tarifas de espacios de estacionamiento.
+
+Para la nomenclatura de commits se emplea la convención **Conventional Commits**, con el objetivo de mantener un historial de cambios claro y fácilmente interpretable. Algunos prefijos utilizados son:
+
+| Prefijo    | Uso                                                                       |
+| ---------- | ------------------------------------------------------------------------- |
+| `feat`     | Incorporación de una nueva funcionalidad.                                 |
+| `fix`      | Corrección de errores o problemas de funcionamiento.                      |
+| `style`    | Cambios visuales o de formato que no modifican la lógica principal.       |
+| `docs`     | Modificaciones relacionadas con documentación.                            |
+| `refactor` | Reorganización o mejora del código sin alterar su comportamiento externo. |
+| `test`     | Incorporación o modificación de pruebas.                                  |
+| `chore`    | Cambios de mantenimiento, configuración o tareas auxiliares.              |
+
+Algunos ejemplos de commits realizados durante el desarrollo son:
+
+```text
+feat(parking-space): implement parking space management flow
+style(parking-space): align typography with design guidelines
+feat(parking-space): align management dashboard with mockup 7
+fix: align parking-space routes to owner area
+feat: add parking space title and features
+```
+
+Además del uso de ramas `feature`, el repositorio de documentación emplea ramas específicas para actividades relacionadas con el informe. Entre ellas se encuentran:
+
+```text
+docs/interview-design
+feature/competitive-analysis
+feature/needfinding
+```
+
+Esta organización permite separar el trabajo de documentación del desarrollo de software, manteniendo un historial independiente y facilitando la integración progresiva de los avances.
+
+En conjunto, esta estrategia de gestión de código permite al equipo reducir conflictos entre integrantes, mantener trazabilidad sobre los cambios realizados, aislar el desarrollo de funcionalidades y consolidar de forma progresiva versiones estables del producto.
+
 ### 5.1.3. Source Code Style Guide and Conventions
 
 Con el propósito de asegurar la legibilidad, mantenibilidad y coherencia arquitectónica en el código fuente del frontend de ParkShare, el equipo de ACME Industries establece un conjunto de directrices normativas de estilo. Estas convenciones garantizan un desarrollo modular, reducen la deuda técnica y facilitan el trabajo colaborativo entre los integrantes del equipo durante el desarrollo de la Landing Page y la Web Application.
