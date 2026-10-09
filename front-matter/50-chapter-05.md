@@ -142,36 +142,301 @@ Esta organización permite separar el trabajo de documentación del desarrollo d
 
 En conjunto, esta estrategia de gestión de código permite al equipo reducir conflictos entre integrantes, mantener trazabilidad sobre los cambios realizados, aislar el desarrollo de funcionalidades y consolidar de forma progresiva versiones estables del producto.
 
-### 5.1.3. Source Code Style Guide and Conventions
+### 5.1.3. Source Code Style Guide & Conventions
 
-Con el propósito de asegurar la legibilidad, mantenibilidad y coherencia arquitectónica en el código fuente del frontend de ParkShare, el equipo de ACME Industries establece un conjunto de directrices normativas de estilo. Estas convenciones garantizan un desarrollo modular, reducen la deuda técnica y facilitan el trabajo colaborativo entre los integrantes del equipo durante el desarrollo de la Landing Page y la Web Application.
+Para mantener consistencia, legibilidad y facilidad de mantenimiento en el código fuente de ParkShare, el equipo adopta convenciones de estilo aplicadas principalmente al desarrollo de la aplicación web en Angular y TypeScript. Estas convenciones se apoyan tanto en la estructura del proyecto como en archivos de configuración presentes en el repositorio, entre ellos `.editorconfig`, `.prettierrc` y `tsconfig.json`.
 
-Directrices para el Frontend (Angular / TypeScript)
-El desarrollo del cliente web se fundamenta en las guías oficiales de estilo de Angular y las mejores prácticas del lenguaje TypeScript.
+El objetivo de estas reglas es asegurar que los distintos integrantes puedan trabajar sobre bounded contexts separados manteniendo una base de código homogénea y fácil de integrar.
 
-**Nomenclatura y Convenciones de Archivos:**
+#### Convenciones generales de formato
 
-- Componentes, Servicios y Módulos: Nombres de archivo en sintaxis kebab-case acompañados de su tipo explícito.
+El repositorio utiliza `.editorconfig` para establecer reglas básicas de formato entre distintos editores e IDE. Las principales configuraciones utilizadas son:
 
-- Clases, Interfaces y Modelos: Redacción en PascalCase para la declaración de clases e interfaces de datos mock / modelos de interfaz.
+| Regla                                | Convención             |
+| ------------------------------------ | ---------------------- |
+| Codificación                         | UTF-8                  |
+| Indentación                          | Espacios               |
+| Tamaño de indentación                | 2 espacios             |
+| Nueva línea al final del archivo     | Obligatoria            |
+| Espacios en blanco al final de línea | Eliminados             |
+| Comillas en TypeScript               | Comillas simples       |
+| Longitud máxima en Markdown          | Sin límite configurado |
 
-- Variables y Métodos: Uso de camelCase para la declaración de propiedades, atributos y funciones.
+Adicionalmente, el proyecto incluye una configuración de **Prettier** mediante `.prettierrc`. Las principales reglas definidas son:
 
-- Constantes: Formato UPPER_SNAKE_CASE para valores inmutables o datos de prueba locales.
+```json
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
+}
+```
 
-**Estructura y Arquitectura de la Aplicación Web:**
+Por lo tanto, el código TypeScript utiliza preferentemente comillas simples y una longitud de línea objetivo de 100 caracteres. Los archivos HTML se formatean utilizando el parser específico de Angular.
 
-- Organización por Capas/Módulos: Distribución clara del código dividida en carpetas funcionales (components, services, models, guards, assets).
+#### Convenciones de nombres
 
-- Diseño Modular y Reutilización: Separación entre componentes de maquetación/UI (tarjetas de parqueos, filtros, encabezados) y servicios locales encargados de manejar el estado temporal de la interfaz.
+El proyecto utiliza nombres en inglés para los elementos internos del código fuente con el fin de mantener coherencia con las convenciones del framework y con el lenguaje ubicuo utilizado en la arquitectura.
 
-**Estructura y Estilos Visuales (HTML / CSS):**
+Las principales convenciones son:
 
-Uso de Flexbox y CSS Grid: Estructuración de pantallas adaptables (responsive) mediante grillas flexibles alineadas con las guías de diseño para dispositivos móviles y de escritorio.
+| Elemento                  | Convención                    | Ejemplo                       |
+| ------------------------- | ----------------------------- | ----------------------------- |
+| Clases                    | PascalCase                    | `ParkingSpaceManagementStore` |
+| Entidades                 | PascalCase                    | `ParkingSpace`                |
+| Interfaces y tipos        | PascalCase                    | `ParkingSpaceFeature`         |
+| Métodos                   | camelCase                     | `loadParkingSpaces()`         |
+| Variables                 | camelCase                     | `parkingSpaces`               |
+| Constantes globales       | UPPER_SNAKE_CASE              | `PARKING_SPACE_FEATURES`      |
+| Archivos                  | kebab-case                    | `parking-space.entity.ts`     |
+| Carpetas                  | kebab-case                    | `parking-space-management`    |
+| Selectores de componentes | kebab-case con prefijo `app-` | `app-parking-space-card`      |
+| Rutas                     | kebab-case                    | `/parking-spaces`             |
 
-**Calidad y Formateo de Código:**
+Los nombres deben ser descriptivos y representar claramente su responsabilidad dentro del bounded context.
 
-Análisis Estático: Integración de ESLint con reglas de TypeScript (typescript-eslint) para asegurar el tipado explícito, evitar variables no utilizadas y mantener la limpieza en los componentes de Angular.
+#### Organización por bounded contexts
+
+El frontend se organiza siguiendo una separación por contextos funcionales. Cada bounded context mantiene sus propias responsabilidades y evita depender directamente de detalles internos pertenecientes a otros contextos.
+
+Ejemplo:
+
+```text
+src/app/
+├── parking-space-management/
+├── profile/
+└── shared/
+```
+
+Dentro de bounded contexts como **Parking Space Management**, el código se separa en capas:
+
+```text
+parking-space-management/
+├── domain/
+├── application/
+├── infrastructure/
+└── presentation/
+```
+
+Esta estructura permite distinguir entre reglas de dominio, coordinación de casos de uso, acceso a datos e interfaz de usuario.
+
+Las responsabilidades generales de las capas son:
+
+| Capa             | Responsabilidad                                                 |
+| ---------------- | --------------------------------------------------------------- |
+| `domain`         | Entidades, tipos y reglas propias del dominio.                  |
+| `application`    | Stores, contratos y coordinación de casos de uso.               |
+| `infrastructure` | Persistencia, acceso a API, repositorios y adaptación de datos. |
+| `presentation`   | Componentes, páginas, formularios, validadores y rutas.         |
+
+Los elementos reutilizables que no pertenecen exclusivamente a un bounded context se ubican en `shared`.
+
+#### Convenciones para Angular
+
+La aplicación utiliza Angular con componentes standalone. Cada componente mantiene separados sus archivos de TypeScript, HTML, CSS y pruebas.
+
+Ejemplo:
+
+```text
+parking-space-card/
+├── parking-space-card.ts
+├── parking-space-card.html
+├── parking-space-card.css
+└── parking-space-card.spec.ts
+```
+
+La declaración de un componente sigue la estructura estándar del proyecto:
+
+```ts
+@Component({
+  selector: "app-parking-space-card",
+  imports: [],
+  templateUrl: "./parking-space-card.html",
+  styleUrl: "./parking-space-card.css",
+})
+export class ParkingSpaceCard {}
+```
+
+Se evita concentrar lógica de negocio dentro de los componentes visuales. La capa de presentación debe delegar operaciones de estado y casos de uso hacia la capa `application`.
+
+#### Manejo de estado
+
+Para el manejo de estado local de los bounded contexts se emplean las capacidades reactivas de Angular, principalmente **Signals**.
+
+Un store puede exponer estados de solo lectura como:
+
+```ts
+readonly parkingSpaces = this.parkingSpacesSignal.asReadonly();
+readonly loading = this.loadingSignal.asReadonly();
+readonly error = this.errorSignal.asReadonly();
+```
+
+Este enfoque permite mantener el estado centralizado dentro de la capa `application` y evita que los componentes modifiquen directamente la información almacenada.
+
+Cuando un valor depende de otro estado reactivo, se puede utilizar `computed()`.
+
+#### Formularios y validación
+
+Para los formularios de la aplicación se utiliza **Reactive Forms**, lo que permite mantener las reglas de validación de forma explícita y tipada.
+
+Ejemplo:
+
+```ts
+protected readonly form = this.formBuilder.nonNullable.group({
+  name: ['', [Validators.required, Validators.maxLength(100)]],
+  address: ['', [Validators.required, Validators.maxLength(180)]],
+  hourlyRate: [0, [Validators.required, Validators.min(0.01)]],
+});
+```
+
+Cuando una validación involucra más de un campo, se utilizan validadores personalizados. Un ejemplo dentro del bounded context Parking Space Management es la validación de períodos de disponibilidad, donde la hora de inicio debe ser anterior a la hora de finalización.
+
+#### Separación del acceso a datos
+
+Los componentes de presentación no deben comunicarse directamente con `HttpClient` ni con mecanismos concretos de persistencia.
+
+La comunicación debe mantener una separación similar a:
+
+```text
+Presentation
+     ↓
+Application
+     ↓
+Infrastructure
+     ↓
+API / Data Source
+```
+
+Esto permite sustituir una implementación temporal en memoria por una integración HTTP sin modificar la lógica de la interfaz.
+
+Durante el desarrollo pueden utilizarse implementaciones de repositorio en memoria o servicios simulados, siempre que respeten los contratos definidos en la capa `application`.
+
+#### Internacionalización
+
+La aplicación utiliza `ngx-translate` para manejar textos en distintos idiomas. Los textos visibles para el usuario deben almacenarse en archivos de traducción en lugar de duplicarse directamente dentro de los templates.
+
+Los archivos utilizados se encuentran en:
+
+```text
+public/i18n/
+├── en.json
+└── es.json
+```
+
+Ejemplo de uso en un template:
+
+```html
+<h1>{{ 'parkingSpace.create.title' | translate }}</h1>
+```
+
+También se utilizan claves jerárquicas para agrupar textos de acuerdo con el bounded context y la funcionalidad:
+
+```json
+{
+  "parkingSpace": {
+    "form": {
+      "name": "Título",
+      "address": "Dirección",
+      "hourlyRate": "Tarifa por hora"
+    }
+  }
+}
+```
+
+#### Estilos visuales
+
+Los estilos específicos de un componente se mantienen en su archivo `.css` asociado, evitando mezclar estilos locales con configuraciones globales.
+
+Para valores visuales compartidos se utilizan variables CSS definidas a nivel global cuando corresponde.
+
+Ejemplo:
+
+```css
+color: var(--color-primary-dark);
+background: var(--color-light-bg);
+```
+
+La aplicación utiliza Angular Material para distintos controles de interfaz, incluyendo formularios, botones, chips, iconos y otros elementos visuales.
+
+Los componentes deben mantener coherencia con los lineamientos visuales establecidos en el capítulo de Style Guidelines y con los mockups definidos para ParkShare.
+
+#### TypeScript y compilación estricta
+
+El archivo `tsconfig.json` habilita diferentes verificaciones que favorecen un código más seguro y predecible.
+
+Entre las opciones configuradas se encuentran:
+
+```json
+{
+  "noImplicitOverride": true,
+  "noPropertyAccessFromIndexSignature": true,
+  "noImplicitReturns": true,
+  "noFallthroughCasesInSwitch": true,
+  "isolatedModules": true
+}
+```
+
+Angular también mantiene configuraciones estrictas para inyección de dependencias e inputs:
+
+```json
+{
+  "strictInjectionParameters": true,
+  "strictInputAccessModifiers": true
+}
+```
+
+Por ello, se procura utilizar tipos explícitos cuando ayudan a clarificar contratos y evitar el uso innecesario de `any`.
+
+#### Pruebas
+
+Los componentes y servicios pueden acompañarse de archivos `.spec.ts`. El proyecto incluye Vitest dentro de sus dependencias de desarrollo y dispone del comando:
+
+```bash
+npm test
+```
+
+Para validar que la aplicación puede compilar correctamente se utiliza:
+
+```bash
+npm run build
+```
+
+o su equivalente:
+
+```bash
+ng build
+```
+
+Antes de integrar una feature a `develop`, se recomienda comprobar al menos que el proyecto compile sin errores y que las pruebas asociadas a la funcionalidad modificada continúen funcionando.
+
+#### Convenciones de commits
+
+Como complemento de las convenciones de código, los commits siguen el enfoque de **Conventional Commits** descrito en la sección anterior.
+
+Formato general:
+
+```text
+type(scope): description
+```
+
+Ejemplos:
+
+```text
+feat(parking-space): implement parking space management flow
+fix(parking-space): align parking-space routes to owner area
+style(parking-space): align typography with design guidelines
+```
+
+Los mensajes deben describir de forma breve la intención del cambio y mantener una relación clara con la funcionalidad modificada.
+
+En conjunto, estas convenciones permiten mantener una base de código uniforme, reducir diferencias de estilo entre desarrolladores y facilitar la integración de cambios realizados en distintos bounded contexts del proyecto.
 
 ### 5.1.4. Software Deployment Configuration
 
