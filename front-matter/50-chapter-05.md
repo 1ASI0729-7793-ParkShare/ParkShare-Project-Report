@@ -648,19 +648,44 @@ En este Sprint se logró la implementación de la estructura base de la Web Appl
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-En el Sprint 2 se logró implementar la primera versión funcional de la Web Application de ParkShare para el rol de Conductor. A continuación, se presentan las evidencias visuales de las principales vistas implementadas:
+En el Sprint 2 se logró implementar la primera versión funcional de la Web Application de ParkShare. A continuación, se presentan las evidencias visuales correspondientes al bounded context **Parking Space Management**, encargado de permitir que los propietarios administren los espacios de estacionamiento que publican dentro de la plataforma.
 
-Perfil del conductor: datos del vehículo registrado y documentos de verificación
+**Gestión de espacios de estacionamiento del propietario**
 
-![Perfil del conductor](../report/assets/sprint2-perfil-detalle.png)
+La siguiente vista muestra el estado inicial de la sección **Mis cocheras**, antes de que el propietario haya registrado un espacio de estacionamiento. Desde esta pantalla puede iniciar el proceso de publicación mediante la opción correspondiente.
 
-Edición del vehículo
+<div align="center">
+  <img src="../assets/chapter-05/parking-space-management-execution-1.png"
+       alt="Vista inicial de Mis cocheras"
+       width="900">
+  <p>
+    <i><b>Figura:</b> Vista inicial de Mis cocheras sin espacios publicados.</i>
+  </p>
+</div>
 
-![Edición del vehículo](../report/assets/sprint2-perfil-edicion.png)
+Al seleccionar la opción para publicar una nueva cochera, el sistema presenta un formulario donde el propietario puede ingresar la información requerida para registrar su espacio de estacionamiento, incluyendo los datos necesarios para definir sus características y condiciones de publicación.
 
-Vista en inglés (internacionalización)
+<div align="center">
+  <img src="../assets/chapter-05/parking-space-management-execution-2.png"
+       alt="Formulario para publicar una cochera"
+       width="900">
+  <p>
+    <i><b>Figura:</b> Formulario de publicación de una nueva cochera.</i>
+  </p>
+</div>
 
-![Vista en inglés](../report/assets/sprint2-perfil-en.png)
+Una vez completado correctamente el formulario y realizada la publicación, el espacio registrado aparece dentro de la sección **Mis cocheras**, permitiendo al propietario visualizar y continuar administrando su publicación.
+
+<div align="center">
+  <img src="../assets/chapter-05/parking-space-management-execution-3.png"
+       alt="Cochera publicada en Mis cocheras"
+       width="900">
+  <p>
+    <i><b>Figura:</b> Visualización de una cochera publicada correctamente.</i>
+  </p>
+</div>
+
+Estas evidencias demuestran el flujo principal de publicación de espacios de estacionamiento implementado en el bounded context **Parking Space Management**, desde el estado inicial sin publicaciones hasta el registro y visualización de una nueva cochera.
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
