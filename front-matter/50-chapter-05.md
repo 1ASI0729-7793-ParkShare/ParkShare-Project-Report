@@ -1315,9 +1315,20 @@ Web Application (Frotend): Desplegada de forma continua mediante GitHub Actions 
 RESTful Web Services (Backend):Desarrollada con Spring Boot y Java, empaquetada mediante un contenedor Docker y desplegada en la plataforma cloud Render, exponiendo la API RESTful documentada con Swagger UI. https://parkshare-platform.onrender.com/swagger-ui/index.html 
 
 
-
-
 #### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, el trabajo colaborativo del equipo se organizó mediante el flujo de ramas basado en GitFlow y convenciones de Conventional Commits en los repositorios oficiales `ParkShare-Platform` (backend) y `ParkShare-frontend` (aplicación web), coordinando los avances a través de reuniones sincrónicas en Discord y tableros ágiles en Trello
+
+La división por bounded contexts permitió desarrollar en paralelo los servicios RESTful y su respectiva integración en el frontend sin generar conflictos críticos durante la consolidación en `develop`. A continuación, se presentan las métricas de contribuciones registradas en GitHub durante este periodo:
+
+
+
+Frotend:
+
+
+Backend:
+
+![Evidencia de participacion Sprint 3](../assets/chapter-05/Backend-Sprint3.png)
 
 ## 5.3. Validation Interviews
 
