@@ -714,7 +714,7 @@ Link de la Web Application: [COMPLETAR]
 
 En esta sección se presenta el avance del Sprint 3 en términos de desarrollo del producto y trabajo colaborativo del equipo.
 
-Durante este sprint se implementó la primera versión de los Web Services de ParkShare, desarrollados en Spring Boot con Java 21, y se realizó su integración progresiva con la Web Application en Angular, reemplazando la dependencia de la Fake API utilizada en el sprint anterior. 
+Durante este sprint se implementó la primera versión de los Web Services de ParkShare, desarrollados en Spring Boot con Java 21, y se realizó su integración progresiva con la Web Application en Angular, reemplazando la dependencia de la Fake API utilizada en el sprint anterior.
 El avance se centró en la exposición y consumo de los servicios RESTful para autenticación y roles, gestión y publicación de cocheras, reservas e historial del conductor, pagos y transferencias, dashboard analítico del propietario, así como el reporte de incidentes con carga de archivos y alertas de emergencia.
 
 Asimismo, se incluyen evidencias de la planificación del sprint, la organización del equipo, el desarrollo realizado, la documentación de la API y los resultados obtenidos.
@@ -723,66 +723,60 @@ Asimismo, se incluyen evidencias de la planificación del sprint, la organizaci�
 
 En esta sección se describen los principales acuerdos y definiciones realizados durante el Sprint Planning del Sprint 3, donde el equipo se enfocó en el desarrollo de la primera versión de los Web Services (Spring Boot / Java 21) y su integración completa con la Web Application en Angular, reemplazando la dependencia de la Fake API utilizada en el sprint anterior[cite: 1].
 
-| Campo | Detalle |
-| :--- | :--- |
-| **Sprint #** | Sprint 3 |
-| **Sprint Planning Background** | |
-| Date | 2026-11-13 |
-| Time | 16:30|
-| Location | Reunión virtual (Discord) |
-| Prepared By | Palomino Vilcañaupa, Daril Johan |
-| Attendees (to planning meeting) | Palomino Vilcañaupa, Daril Johan - Tello Palacios, Fabrizio Rafael - Checa Burga, Oscar Diego - Yanac Flores, Gabriel Stefano - Urviola Condori, Mateo Sebastian |
-| **Sprint 3 – Review Summary** | En esta entrega se implementó y desplegó la API RESTful de ParkShare en Render (`ParkShare-Platform`), documentada con Swagger/OpenAPI, y se integró con la Web Application (`ParkShare-frontend`) desplegada en GitHub Pages, cubriendo los bounded contexts de IAM, gestión de cocheras, reservas, pagos, analítica del propietario, incidentes y alertas de emergencia. |
-| **Sprint 3 – Retrospective Summary** | El equipo logró una integración fluida entre backend y frontend gracias a la definición previa de contratos REST y arquitectura por bounded contexts. Como oportunidad de mejora, se identificó la necesidad de estandarizar desde el inicio del sprint los endpoints transversales (como carga de archivos y alertas) para evitar ajustes de última hora en los entornos de despliegue. |
-| **Sprint Goal & User Stories** | |
-| **Sprint 3 Goal** | Nuestro objetivo es desarrollar e integrar la primera versión funcional de los Web Services de ParkShare con la Web Application en Angular, eliminando la dependencia de datos simulados. Consideramos que esto permitirá ejecutar de extremo a extremo los flujos principales de autenticación, gestión de cocheras, reservas, pagos, analítica e incidentes. Confirmaremos el éxito de este objetivo cuando tanto el backend como el frontend estén desplegados y operando sobre la API REST en producción. |
+| Campo                                   | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sprint #**                            | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Sprint Planning Background**          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Date                                    | 2026-11-13                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Time                                    | 16:30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Location                                | Reunión virtual (Discord)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Prepared By                             | Palomino Vilcañaupa, Daril Johan                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Attendees (to planning meeting)         | Palomino Vilcañaupa, Daril Johan - Tello Palacios, Fabrizio Rafael - Checa Burga, Oscar Diego - Yanac Flores, Gabriel Stefano - Urviola Condori, Mateo Sebastian                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Sprint 3 – Review Summary**           | En esta entrega se implementó y desplegó la API RESTful de ParkShare en Render (`ParkShare-Platform`), documentada con Swagger/OpenAPI, y se integró con la Web Application (`ParkShare-frontend`) desplegada en GitHub Pages, cubriendo los bounded contexts de IAM, gestión de cocheras, reservas, pagos, analítica del propietario, incidentes y alertas de emergencia.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Sprint 3 – Retrospective Summary**    | El equipo logró una integración fluida entre backend y frontend gracias a la definición previa de contratos REST y arquitectura por bounded contexts. Como oportunidad de mejora, se identificó la necesidad de estandarizar desde el inicio del sprint los endpoints transversales (como carga de archivos y alertas) para evitar ajustes de última hora en los entornos de despliegue.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Sprint Goal & User Stories**          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Sprint 3 Goal**                       | Nuestro objetivo es desarrollar e integrar la primera versión funcional de los Web Services de ParkShare con la Web Application en Angular, eliminando la dependencia de datos simulados. Consideramos que esto permitirá ejecutar de extremo a extremo los flujos principales de autenticación, gestión de cocheras, reservas, pagos, analítica e incidentes. Confirmaremos el éxito de este objetivo cuando tanto el backend como el frontend estén desplegados y operando sobre la API REST en producción.                                                                                                                                                                                                                                                                                                                                                                        |
 | **User Stories incluidas en el Sprint** | **US01**: Registro de usuario (5 pts); **US02**: Inicio de sesión (3 pts); **US05**: Servicio API de usuarios e identidad (8 pts); **US06**: Publicación de espacio de estacionamiento (5 pts); **US07**: Edición de espacio publicado (3 pts); **US08**: Configuración de disponibilidad (5 pts); **US09**: Configuración de tarifa (3 pts); **US10**: Servicio API de espacios de estacionamiento (8 pts); **US15**: Solicitud de reserva (5 pts); **US16**: Servicio API de búsqueda y reservas (8 pts); **US17**: Confirmación de solicitud de reserva (5 pts); **US18**: Cancelación de reserva (5 pts); **US22**: Pago de reserva (8 pts); **US23**: Consulta de ingresos del propietario (3 pts); **US24**: Calificación después de una reserva (3 pts); **US25**: Recepción de notificaciones (5 pts); **US26**: Servicio API de pagos, reputación y notificaciones (8 pts). |
-| **Sprint 3 Velocity** | 90 Story Points |
-| **Sum of Story Points** | 90 Story Points |
-
+| **Sprint 3 Velocity**                   | 90 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Sum of Story Points**                 | 90 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
 Para este tercer sprint, los frentes de trabajo se distribuyeron según los bounded contexts de la plataforma, abarcando tanto la construcción de los servicios REST en `ParkShare-Platform` como su consumo en `ParkShare-frontend`.
 
-A continuación, se presenta la distribución de roles según las responsabilidades asignadas en el sprint 
+A continuación, se presenta la distribución de roles según las responsabilidades asignadas en el sprint
 (**L**: Líder, **C**: Colaborador, **A**: Apoyo, **X**: Sin participación directa):
 
-| Team Member (Last Name, First Name) | GitHub Username | IAM y Seguridad (`US01, US02, US05`) | Espacios y Publicaciones (`US06–US10`) | Reservas e Historial (`US15–US18`) | Pagos, Reputación y Analytics (`US22–US26`) | Incidentes, Alertas y Despliegue |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Palomino Vilcañaupa, Daril Johan** | `Daroh19` | [X] | [A] | [A] | [A] | [C] |
-| **Urviola Condori, Mateo Sebastian** | `BeyaminUv` | [A] | [C] | [L] | [C] | [A] |
-| **Checa Burga, Oscar Diego** | `OscarCheca` | [L] | [C] | [A] | [A] | [C] |
-| **Tello Palacios, Fabrizio Rafael** | `F4bris` | [C] | [L] | [L] | [A] | [C] |
-| **Yanac Flores, Gabriel Stefano** | `u20241d945` | [A] | [A] | [C] | [C] | [L] |
-
-
+| Team Member (Last Name, First Name)  | GitHub Username | IAM y Seguridad (`US01, US02, US05`) | Espacios y Publicaciones (`US06–US10`) | Reservas e Historial (`US15–US18`) | Pagos, Reputación y Analytics (`US22–US26`) | Incidentes, Alertas y Despliegue |
+| :----------------------------------- | :-------------- | :----------------------------------: | :------------------------------------: | :--------------------------------: | :-----------------------------------------: | :------------------------------: |
+| **Palomino Vilcañaupa, Daril Johan** | `Daroh19`       |                 [X]                  |                  [A]                   |                [A]                 |                     [A]                     |               [C]                |
+| **Urviola Condori, Mateo Sebastian** | `BeyaminUv`     |                 [A]                  |                  [C]                   |                [L]                 |                     [C]                     |               [A]                |
+| **Checa Burga, Oscar Diego**         | `OscarCheca`    |                 [L]                  |                  [C]                   |                [A]                 |                     [A]                     |               [C]                |
+| **Tello Palacios, Fabrizio Rafael**  | `F4bris`        |                 [C]                  |                  [L]                   |                [L]                 |                     [A]                     |               [C]                |
+| **Yanac Flores, Gabriel Stefano**    | `u20241d945`    |                 [A]                  |                  [A]                   |                [C]                 |                     [C]                     |               [L]                |
 
 #### 5.2.3.3. Sprint Backlog 3
 
 Durante el Sprint 3, la prioridad principal fue la construcción de los Web Services en Spring Boot y la migración de los repositorios del frontend Angular hacia la API REST desplegada[cite: 1].
 
-El seguimiento del Sprint Backlog se administró mediante Trello utilizando una codificación jerárquica (`US[Contexto][ID]-TSK3XX`) que vincula cada tarea técnica del sprint con su User Story original en el Product Backlog, organizadas en las columnas *To-Do*, *In Progress* y *Done*[cite: 1, 6]:
+El seguimiento del Sprint Backlog se administró mediante Trello utilizando una codificación jerárquica (`US[Contexto][ID]-TSK3XX`) que vincula cada tarea técnica del sprint con su User Story original en el Product Backlog, organizadas en las columnas _To-Do_, _In Progress_ y _Done_[cite: 1, 6]:
 
-| User Story Base | Código Tarea (Trello) | Tarea técnica | Estado |
-| :--- | :--- | :--- | :---: |
-| US01 / US02 / US05 | `USIAM01-TSK301` | Implementación de endpoints de registro (`POST /users`), autenticación JWT (`POST /tokens`) y roles (`GET /roles`) en Spring Boot. | Done |
-| US05 | `USIAM05-TSK302` | Implementación de endpoints de perfiles (`/profiles`) y documentos de verificación (`/verification-documents`) e integración HTTP en Angular. | Done |
-| US06 / US07 / US08 / US09 / US10 | `USPSM10-TSK303` | Implementación del CRUD de `/parking-spaces` y `/parking-listings` (`PUT`, `PATCH`, filtros por propietario, fotos y periodos de disponibilidad). | Done |
-| US06 / US07 | `USPSM06-TSK304` | Integración del repositorio HTTP de espacios en Angular (`ParkShare-frontend`) conectado a `/parking-listings`. | Done |
-| US15 / US16 / US17 / US18 | `USBKG16-TSK305` | Implementación de endpoints `/bookings` (`POST`, `GET`, `PUT`) en Spring Boot para gestión de reservas. | Done |
-| US15 / US18 | `USBKG15-TSK306` | Desarrollo e integración de la vista de historial de reservas del conductor (`/driver/history`) con resumen y filtros en Angular. | Done |
-| US22 / US26 | `USPAY26-TSK307` | Implementación de endpoints de transacciones (`/payment-transactions`), resumen de ingresos (`/owner-payouts`) y solicitud de transferencia (`POST /owner-payouts/{id}/transfer`). | Done |
-| US22 | `USPAY22-TSK308` | Integración del flujo de solicitud de transferencia de ingresos del propietario en la Web Application. | Done |
-| US24 / US25 / US26 | `USREP26-TSK309` | Implementación de servicios REST para calificaciones (`/ratings`), reputación (`/user-reputations/{userId}`) y notificaciones (`/notifications`). | Done |
-| US23 / US26 | `USANL23-TSK310` | Implementación del endpoint `GET /owner-dashboard?ownerId={id}` e integración de indicadores calculados en el dashboard del propietario en Angular. | Done |
-| Transversal | `USSAF00-TSK311` | Implementación del servicio de archivos (`/files`), `FileUploadService` en Angular, reportes de incidentes (`/incidents`) con fotos y alertas de emergencia (`/emergency-alerts`). | Done |
-| Transversal | `USOPS00-TSK312` | Configuración de `Dockerfile`, carga de datos semilla (`seed`), despliegue del backend en Render y workflow CI/CD del frontend en GitHub Pages. | Done |
+| User Story Base                  | Código Tarea (Trello) | Tarea técnica                                                                                                                                                                      | Estado |
+| :------------------------------- | :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----: |
+| US01 / US02 / US05               | `USIAM01-TSK301`      | Implementación de endpoints de registro (`POST /users`), autenticación JWT (`POST /tokens`) y roles (`GET /roles`) en Spring Boot.                                                 |  Done  |
+| US05                             | `USIAM05-TSK302`      | Implementación de endpoints de perfiles (`/profiles`) y documentos de verificación (`/verification-documents`) e integración HTTP en Angular.                                      |  Done  |
+| US06 / US07 / US08 / US09 / US10 | `USPSM10-TSK303`      | Implementación del CRUD de `/parking-spaces` y `/parking-listings` (`PUT`, `PATCH`, filtros por propietario, fotos y periodos de disponibilidad).                                  |  Done  |
+| US06 / US07                      | `USPSM06-TSK304`      | Integración del repositorio HTTP de espacios en Angular (`ParkShare-frontend`) conectado a `/parking-listings`.                                                                    |  Done  |
+| US15 / US16 / US17 / US18        | `USBKG16-TSK305`      | Implementación de endpoints `/bookings` (`POST`, `GET`, `PUT`) en Spring Boot para gestión de reservas.                                                                            |  Done  |
+| US15 / US18                      | `USBKG15-TSK306`      | Desarrollo e integración de la vista de historial de reservas del conductor (`/driver/history`) con resumen y filtros en Angular.                                                  |  Done  |
+| US22 / US26                      | `USPAY26-TSK307`      | Implementación de endpoints de transacciones (`/payment-transactions`), resumen de ingresos (`/owner-payouts`) y solicitud de transferencia (`POST /owner-payouts/{id}/transfer`). |  Done  |
+| US22                             | `USPAY22-TSK308`      | Integración del flujo de solicitud de transferencia de ingresos del propietario en la Web Application.                                                                             |  Done  |
+| US24 / US25 / US26               | `USREP26-TSK309`      | Implementación de servicios REST para calificaciones (`/ratings`), reputación (`/user-reputations/{userId}`) y notificaciones (`/notifications`).                                  |  Done  |
+| US23 / US26                      | `USANL23-TSK310`      | Implementación del endpoint `GET /owner-dashboard?ownerId={id}` e integración de indicadores calculados en el dashboard del propietario en Angular.                                |  Done  |
+| Transversal                      | `USSAF00-TSK311`      | Implementación del servicio de archivos (`/files`), `FileUploadService` en Angular, reportes de incidentes (`/incidents`) con fotos y alertas de emergencia (`/emergency-alerts`). |  Done  |
+| Transversal                      | `USOPS00-TSK312`      | Configuración de `Dockerfile`, carga de datos semilla (`seed`), despliegue del backend en Render y workflow CI/CD del frontend en GitHub Pages.                                    |  Done  |
 
-URL del Trello(Sprint 3): https://trello.com/b/KHiki8SD/product-backlog-3 
-
-
-
+URL del Trello(Sprint 3): https://trello.com/b/KHiki8SD/product-backlog-3
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -1305,23 +1299,276 @@ Como resultado del Sprint 3, ParkShare cuenta con una primera versión funcional
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-Evidencia de los Artefactos de Software 
+Durante el Sprint 3 se realizaron las actividades necesarias para desplegar e integrar los principales productos digitales de ParkShare: **Landing Page, Web Application y RESTful Web Services**.
 
-Landing Page : Realizada y Ejecutada en GitHub Pages. https://1asi0729-7793-parkshare.github.io/landing-page-ParkShare/
+Uno de los principales avances de este Sprint fue la publicación de la primera versión de los Web Services desarrollados con Spring Boot, así como la configuración de la Web Application Angular para consumir dichos servicios desde un entorno de producción. Adicionalmente, se configuró un proceso automatizado de construcción y despliegue del frontend utilizando GitHub Actions y GitHub Pages.
 
+La configuración de deployment utilizada durante el Sprint se resume a continuación:
 
-Web Application (Frotend): Desplegada de forma continua mediante GitHub Actions en GitHub Pages, configurada a través de archivos de entorno para consumir los servicios REST del backend en producción. https://1asi0729-7793-parkshare.github.io/ParkShare-frontend/ 
+| Producto        | Tecnología             | Plataforma de Deployment       | Estado     |
+| --------------- | ---------------------- | ------------------------------ | ---------- |
+| Landing Page    | HTML, CSS y JavaScript | GitHub Pages                   | Desplegado |
+| Web Application | Angular                | GitHub Pages + GitHub Actions  | Desplegado |
+| Web Services    | Spring Boot / Java 21  | Render                         | Desplegado |
+| Persistencia    | PostgreSQL             | Integrada con los Web Services | Operativa  |
 
-RESTful Web Services (Backend):Desarrollada con Spring Boot y Java, empaquetada mediante un contenedor Docker y desplegada en la plataforma cloud Render, exponiendo la API RESTful documentada con Swagger UI. https://parkshare-platform.onrender.com/swagger-ui/index.html 
+##### Landing Page Deployment
 
+El Landing Page de ParkShare se encuentra desplegado mediante **GitHub Pages**, permitiendo el acceso público a la propuesta de valor y principales características de la solución.
+
+Repositorio:
+
+[landing-page-ParkShare](https://github.com/1ASI0729-7793-ParkShare/landing-page-ParkShare)
+
+Aplicación desplegada:
+
+[ParkShare Landing Page](https://1asi0729-7793-parkshare.github.io/landing-page-ParkShare/)
+
+El flujo general de publicación puede representarse de la siguiente manera:
+
+```text
+Landing Page Repository
+        ↓
+      GitHub
+        ↓
+   GitHub Pages
+        ↓
+ Public Landing Page
+```
+
+<div align="center">
+  <img src="../assets/chapter-05/deployment-landing-page.png" alt="ParkShare Landing Page Deployment">
+  <p>
+    <i><b>Figura X.</b> Landing Page de ParkShare ejecutándose desde su deployment público mediante GitHub Pages. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La evidencia permite comprobar que el Landing Page puede ser accedido públicamente mediante HTTPS desde el dominio proporcionado por GitHub Pages.
+
+##### Web Services Deployment
+
+Durante el Sprint 3 se desplegó la primera versión de los **RESTful Web Services de ParkShare**, desarrollados utilizando **Spring Boot 3.5.7 y Java 21**.
+
+El código fuente se encuentra disponible en:
+
+[ParkShare-Platform](https://github.com/1ASI0729-7793-ParkShare/ParkShare-Platform)
+
+Para facilitar el proceso de deployment se incorporó un `Dockerfile` utilizando una estrategia de construcción en múltiples etapas.
+
+En la primera etapa se utiliza Maven para compilar la aplicación:
+
+```dockerfile
+FROM maven:3.9-eclipse-temurin-21 AS build
+WORKDIR /app
+
+COPY pom.xml .
+RUN mvn -B -q dependency:go-offline
+
+COPY src ./src
+RUN mvn -B -q clean package -DskipTests
+```
+
+Posteriormente, el archivo JAR generado es ejecutado mediante una imagen con Java 21:
+
+```dockerfile
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+
+COPY --from=build /app/target/*.jar app.jar
+
+ENV JAVA_TOOL_OPTIONS="-Xmx400m"
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
+Esta configuración fue incorporada mediante el commit:
+
+```text
+03b5e8b
+chore(docker): add Dockerfile and .dockerignore for Render deployment
+```
+
+La configuración de producción permite utilizar PostgreSQL mediante variables de entorno:
+
+```properties
+spring.datasource.url=jdbc:postgresql://${DATABASE_URL}:${DATABASE_PORT:5432}/${DATABASE_NAME}?sslmode=require
+spring.datasource.username=${DATABASE_USER}
+spring.datasource.password=${DATABASE_PASSWORD}
+```
+
+De esta forma, información sensible como credenciales de base de datos o secretos JWT no necesita almacenarse directamente dentro del código fuente.
+
+El flujo de deployment del backend puede representarse de la siguiente manera:
+
+```text
+ParkShare-Platform
+       ↓
+GitHub Repository
+       ↓
+   Dockerfile
+       ↓
+   Maven Build
+       ↓
+Spring Boot JAR
+       ↓
+     Render
+       ↓
+   PostgreSQL
+```
+
+Los Web Services se encuentran desplegados mediante Render en:
+
+```text
+https://parkshare-platform.onrender.com
+```
+
+La URL base utilizada para los servicios REST es:
+
+```text
+https://parkshare-platform.onrender.com/api/v1
+```
+
+Asimismo, la documentación OpenAPI desplegada puede consultarse mediante:
+
+[ParkShare Platform API - Swagger UI](https://parkshare-platform.onrender.com/swagger-ui/index.html)
+
+<div align="center">
+  <img src="../assets/chapter-05/swagger-api-overview.png" alt="ParkShare Platform API Deployment">
+  <p>
+    <i><b>Figura X.</b> ParkShare Platform API desplegada mediante Render y accesible públicamente a través de Swagger UI. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+Esta evidencia permite comprobar que los Web Services desplegados pueden ser accedidos desde Internet y utilizados por la Web Application mediante solicitudes HTTP sobre HTTPS.
+
+##### Web Application Deployment
+
+La Web Application de ParkShare fue desarrollada utilizando **Angular** y se encuentra desplegada mediante **GitHub Pages**.
+
+Repositorio:
+
+[ParkShare-frontend](https://github.com/1ASI0729-7793-ParkShare/ParkShare-frontend)
+
+Aplicación desplegada:
+
+[ParkShare Web Application](https://1asi0729-7793-parkshare.github.io/ParkShare-frontend/)
+
+Durante el Sprint 3 se incorporó un workflow de **GitHub Actions** encargado de automatizar la construcción y publicación de la aplicación.
+
+El workflow se encuentra definido en:
+
+```text
+.github/workflows/deploy.yml
+```
+
+y se ejecuta al producirse cambios sobre la rama `main`.
+
+El proceso configurado puede representarse como:
+
+```text
+Push / Merge a main
+        ↓
+   GitHub Actions
+        ↓
+      npm ci
+        ↓
+ Angular Production Build
+        ↓
+GitHub Pages Artifact
+        ↓
+ actions/deploy-pages
+        ↓
+   GitHub Pages
+```
+
+Para generar el build de producción se utiliza:
+
+```bash
+npx ng build --configuration production --base-href /ParkShare-frontend/
+```
+
+Adicionalmente, debido al uso del sistema de routing de Angular, se genera un archivo `404.html` a partir del archivo principal:
+
+```bash
+cp dist/parkshare/browser/index.html dist/parkshare/browser/404.html
+```
+
+Posteriormente, el resultado generado es publicado utilizando:
+
+```text
+actions/deploy-pages@v4
+```
+
+Durante el Sprint se verificó la ejecución satisfactoria del proceso de deployment mediante GitHub Actions, obteniéndose correctamente el despliegue de la aplicación en el environment `github-pages`.
+
+<div align="center">
+  <img src="../assets/chapter-05/deployment-github-pages.png" alt="ParkShare GitHub Pages Deployment">
+  <p>
+    <i><b>Figura X.</b> Evidencia del deployment satisfactorio de ParkShare Web Application en el environment github-pages mediante GitHub Actions. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La aplicación resultante puede ser accedida públicamente mediante GitHub Pages.
+
+<div align="center">
+  <img src="../assets/chapter-05/deployment-web-application.png" alt="ParkShare Web Application Deployment">
+  <p>
+    <i><b>Figura X.</b> Web Application de ParkShare ejecutándose desde su deployment público en GitHub Pages. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La evidencia muestra además una de las funcionalidades disponibles para el segmento de conductores, correspondiente a la búsqueda de espacios de estacionamiento.
+
+##### Integración entre Web Application y Web Services
+
+Como parte del Sprint 3 se modificó la configuración del frontend para consumir directamente los Web Services desplegados mediante Render.
+
+La URL configurada en los environments de Angular corresponde a:
+
+```typescript
+platformProviderApiBaseUrl: "https://parkshare-platform.onrender.com/api/v1";
+```
+
+A partir de esta URL, la Web Application puede consumir servicios relacionados con perfiles, reservas, publicaciones de estacionamientos, pagos, reputación, incidentes, archivos y analítica.
+
+La arquitectura desplegada puede representarse de la siguiente manera:
+
+```text
+                         ParkShare
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+       Landing Page                Web Application
+       GitHub Pages                GitHub Pages
+                                          │
+                                          │ HTTPS
+                                          ▼
+                               ParkShare Platform API
+                                        Render
+                                          │
+                                          ▼
+                                      PostgreSQL
+```
+
+De esta manera, el frontend actúa como cliente de los servicios REST proporcionados por `ParkShare-Platform`, mientras que el backend concentra la lógica de negocio, persistencia y procesamiento de información.
+
+##### Deployment Summary
+
+Como resultado del Sprint 3, ParkShare dispone de una arquitectura desplegada e integrada que permite acceder públicamente a sus principales productos digitales.
+
+Se logró mantener disponible el Landing Page mediante GitHub Pages, desplegar la Web Application Angular mediante un proceso automatizado de GitHub Actions, desplegar la primera versión de los Web Services mediante Render e integrar el frontend con dichos servicios.
+
+Asimismo, se incorporó PostgreSQL para la persistencia de información y se utilizaron variables de entorno para la configuración de parámetros y credenciales sensibles.
+
+Con estas actividades se obtuvo una primera versión integrada y desplegada de ParkShare, permitiendo utilizar la Web Application desde Internet y consumir los servicios REST proporcionados por el backend.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
 Durante el Sprint 3, el trabajo colaborativo del equipo se organizó mediante el flujo de ramas basado en GitFlow y convenciones de Conventional Commits en los repositorios oficiales `ParkShare-Platform` (backend) y `ParkShare-frontend` (aplicación web), coordinando los avances a través de reuniones sincrónicas en Discord y tableros ágiles en Trello
 
 La división por bounded contexts permitió desarrollar en paralelo los servicios RESTful y su respectiva integración en el frontend sin generar conflictos críticos durante la consolidación en `develop`. A continuación, se presentan las métricas de contribuciones registradas en GitHub durante este periodo:
-
-
 
 Frotend:
 
