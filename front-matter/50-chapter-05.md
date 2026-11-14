@@ -1325,6 +1325,7 @@ La división por bounded contexts permitió desarrollar en paralelo los servicio
 
 Frotend:
 
+![Evidencia de participacion Sprint 3](../assets/chapter-05/Frotend-Sprint3.png)
 
 Backend:
 
