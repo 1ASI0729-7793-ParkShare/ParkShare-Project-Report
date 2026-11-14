@@ -738,15 +738,6 @@ A diferencia de las entrevistas realizadas durante la etapa de Needfinding, en e
 
 Posteriormente, el entrevistado podrá explorar la interfaz y responder una serie de preguntas orientadas a evaluar la claridad de la información, facilidad de uso, organización de las opciones, percepción de seguridad y utilidad de las funcionalidades presentadas.
 
-La sesión se desarrollará siguiendo la siguiente estructura:
-
-1. Presentación breve de ParkShare.
-2. Recorrido por el Landing Page.
-3. Presentación de las principales funcionalidades de la Web Application relacionadas con el segmento objetivo.
-4. Exploración de la interfaz por parte del entrevistado.
-5. Preguntas de validación.
-6. Comentarios y sugerencias finales.
-
 Para la validación se consideran los dos segmentos objetivo definidos para ParkShare:
 
 - **Segmento 1: Conductores en Zonas Urbanas.**
@@ -757,23 +748,6 @@ Para la validación se consideran los dos segmentos objetivo definidos para Park
 Para los participantes pertenecientes al segmento de conductores se presentará inicialmente el Landing Page de ParkShare, explicando su propuesta de valor y las principales secciones disponibles.
 
 Posteriormente se mostrarán las principales funcionalidades de la Web Application relacionadas con un conductor.
-
-El recorrido incluirá los siguientes elementos:
-
-- Búsqueda de espacios de estacionamiento.
-- Visualización de espacios disponibles.
-- Información y detalles de una cochera.
-- Proceso de reserva.
-- Confirmación de una reserva.
-- Consulta de reservas realizadas.
-- Gestión del perfil y datos del vehículo.
-- Opciones relacionadas con la verificación de identidad.
-
-Estos elementos corresponden principalmente a los User Flows definidos previamente para el conductor:
-
-- **Buscar y reservar una cochera.**
-- **Consultar historial de reservas.**
-- **Gestionar perfil y vehículos.**
 
 Después de mostrar la solución, se realizarán las siguientes preguntas:
 
@@ -812,24 +786,6 @@ Después de mostrar la solución, se realizarán las siguientes preguntas:
 Para los participantes pertenecientes al segmento de propietarios se realizará inicialmente un recorrido por el Landing Page, mostrando cómo ParkShare presenta la posibilidad de aprovechar espacios de estacionamiento disponibles para generar ingresos.
 
 Posteriormente se mostrarán las principales opciones de la Web Application relacionadas con la administración de espacios de estacionamiento.
-
-El recorrido incluirá:
-
-- Visualización de sus espacios de estacionamiento.
-- Publicación de una nueva cochera.
-- Registro de dirección y características del espacio.
-- Configuración de precio.
-- Configuración de disponibilidad.
-- Edición de una cochera publicada.
-- Visualización de estados de las cocheras.
-- Consulta de ingresos generados.
-- Información relacionada con reservas y actividad del espacio.
-
-Estos elementos corresponden principalmente a los User Flows definidos para propietarios:
-
-- **Publicar una cochera.**
-- **Administrar espacios publicados.**
-- **Consultar ingresos.**
 
 Después del recorrido se realizarán las siguientes preguntas:
 
