@@ -779,7 +779,7 @@ El seguimiento del Sprint Backlog se administró mediante Trello utilizando una 
 | Transversal | `USSAF00-TSK311` | Implementación del servicio de archivos (`/files`), `FileUploadService` en Angular, reportes de incidentes (`/incidents`) con fotos y alertas de emergencia (`/emergency-alerts`). | Done |
 | Transversal | `USOPS00-TSK312` | Configuración de `Dockerfile`, carga de datos semilla (`seed`), despliegue del backend en Render y workflow CI/CD del frontend en GitHub Pages. | Done |
 
-
+URL del Trello(Sprint 3): https://trello.com/b/KHiki8SD/product-backlog-3 
 
 
 
@@ -1304,6 +1304,18 @@ El código correspondiente a los Web Services se encuentra centralizado en el re
 Como resultado del Sprint 3, ParkShare cuenta con una primera versión funcional y desplegada de sus Web Services, documentada mediante OpenAPI/Swagger y accesible desde la Web Application para soportar las principales operaciones de la plataforma.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Evidencia de los Artefactos de Software 
+
+Landing Page : Realizada y Ejecutada en GitHub Pages. https://1asi0729-7793-parkshare.github.io/landing-page-ParkShare/
+
+
+Web Application (Frotend): Desplegada de forma continua mediante GitHub Actions en GitHub Pages, configurada a través de archivos de entorno para consumir los servicios REST del backend en producción. https://1asi0729-7793-parkshare.github.io/ParkShare-frontend/ 
+
+RESTful Web Services (Backend):Desarrollada con Spring Boot y Java, empaquetada mediante un contenedor Docker y desplegada en la plataforma cloud Render, exponiendo la API RESTful documentada con Swagger UI. https://parkshare-platform.onrender.com/swagger-ui/index.html 
+
+
+
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
