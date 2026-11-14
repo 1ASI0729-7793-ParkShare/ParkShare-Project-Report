@@ -724,6 +724,248 @@ Link de la Web Application: [COMPLETAR]
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
+Durante el Sprint 3 se implementó y documentó la primera versión de los **Web Services de ParkShare**, desarrollados con **Spring Boot 3.5.7 y Java 21**. La solución expone una API RESTful encargada de brindar soporte a las principales funcionalidades de la plataforma, incluyendo autenticación, perfiles, gestión de espacios de estacionamiento, reservas, pagos, reputación, notificaciones y analítica para propietarios.
+
+Para la documentación de los servicios se utilizó **OpenAPI Specification mediante Springdoc OpenAPI**, permitiendo visualizar y probar los endpoints disponibles directamente desde Swagger UI. Cada operación documentada incluye el método HTTP utilizado, la ruta del recurso, parámetros de entrada, estructura de las solicitudes y posibles respuestas del servidor.
+
+La documentación desplegada se encuentra disponible en:
+
+[ParkShare Platform API - Swagger UI](https://parkshare-platform.onrender.com/swagger-ui/index.html)
+
+Asimismo, el código fuente de los Web Services se encuentra disponible en:
+
+[ParkShare Platform - GitHub Repository](https://github.com/1ASI0729-7793-ParkShare/ParkShare-Platform)
+
+La URL base utilizada por la Web Application para consumir los servicios es:
+
+```text
+https://parkshare-platform.onrender.com/api/v1
+```
+
+##### Documentación general de los Web Services
+
+Swagger UI organiza los endpoints de ParkShare según los diferentes recursos y responsabilidades de la plataforma. Entre los servicios documentados se encuentran autenticación de usuarios, perfiles, espacios de estacionamiento, publicaciones, reservas, pagos, calificaciones, notificaciones, reportes de incidentes y analítica para propietarios.
+
+<div align="center">
+  <img src="../assets/chapter-05/swagger-api-overview.png" alt="ParkShare Platform API Swagger Overview">
+  <p>
+    <i><b>Figura X.</b> Vista general de la documentación de ParkShare Platform API mediante Swagger UI. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La API desplegada corresponde a la versión **1.0.0 de ParkShare Platform API** y utiliza OpenAPI 3.1 para describir las operaciones disponibles.
+
+##### Principales endpoints implementados
+
+A continuación se presentan los principales recursos expuestos por los Web Services durante el Sprint 3.
+
+| Recurso                | Método   | Endpoint                                    | Descripción                                                     |
+| ---------------------- | -------- | ------------------------------------------- | --------------------------------------------------------------- |
+| Users                  | `POST`   | `/api/v1/users`                             | Registra un nuevo usuario.                                      |
+| Users                  | `GET`    | `/api/v1/users`                             | Obtiene los usuarios registrados.                               |
+| Users                  | `GET`    | `/api/v1/users/{userId}`                    | Obtiene un usuario por identificador.                           |
+| Tokens                 | `POST`   | `/api/v1/tokens`                            | Autentica un usuario y genera un token JWT.                     |
+| Roles                  | `GET`    | `/api/v1/roles`                             | Obtiene los roles disponibles.                                  |
+| Profiles               | `POST`   | `/api/v1/profiles`                          | Registra un perfil de usuario.                                  |
+| Profiles               | `GET`    | `/api/v1/profiles`                          | Obtiene los perfiles registrados.                               |
+| Profiles               | `GET`    | `/api/v1/profiles/{id}`                     | Obtiene un perfil por identificador.                            |
+| Profiles               | `PUT`    | `/api/v1/profiles/{id}`                     | Actualiza los datos de un perfil.                               |
+| Verification Documents | `POST`   | `/api/v1/verification-documents`            | Registra un documento de verificación.                          |
+| Verification Documents | `GET`    | `/api/v1/verification-documents`            | Obtiene los documentos registrados.                             |
+| Parking Spaces         | `POST`   | `/api/v1/parking-spaces`                    | Registra un nuevo espacio de estacionamiento.                   |
+| Parking Spaces         | `GET`    | `/api/v1/parking-spaces`                    | Obtiene los espacios registrados.                               |
+| Parking Spaces         | `GET`    | `/api/v1/parking-spaces/{id}`               | Obtiene un espacio por identificador.                           |
+| Parking Spaces         | `PUT`    | `/api/v1/parking-spaces/{id}`               | Actualiza un espacio de estacionamiento.                        |
+| Parking Spaces         | `DELETE` | `/api/v1/parking-spaces/{id}`               | Elimina un espacio de estacionamiento.                          |
+| Parking Listings       | `POST`   | `/api/v1/parking-listings`                  | Publica un espacio dentro del marketplace.                      |
+| Parking Listings       | `GET`    | `/api/v1/parking-listings`                  | Obtiene las publicaciones disponibles.                          |
+| Parking Listings       | `GET`    | `/api/v1/parking-listings/{id}`             | Obtiene los detalles de una publicación.                        |
+| Parking Listings       | `PUT`    | `/api/v1/parking-listings/{id}`             | Actualiza una publicación.                                      |
+| Parking Listings       | `PATCH`  | `/api/v1/parking-listings/{id}`             | Actualiza parcialmente una publicación.                         |
+| Bookings               | `POST`   | `/api/v1/bookings`                          | Registra una nueva reserva.                                     |
+| Bookings               | `GET`    | `/api/v1/bookings`                          | Obtiene las reservas existentes.                                |
+| Bookings               | `GET`    | `/api/v1/bookings/{id}`                     | Obtiene una reserva específica.                                 |
+| Bookings               | `PUT`    | `/api/v1/bookings/{id}`                     | Actualiza el estado de una reserva.                             |
+| Payment Transactions   | `GET`    | `/api/v1/payment-transactions?ownerId={id}` | Consulta las transacciones de un propietario.                   |
+| Owner Payouts          | `GET`    | `/api/v1/owner-payouts?ownerId={id}`        | Consulta el resumen de ingresos del propietario.                |
+| Owner Payouts          | `POST`   | `/api/v1/owner-payouts/{id}/transfer`       | Solicita una transferencia del saldo disponible.                |
+| Ratings                | `POST`   | `/api/v1/ratings`                           | Registra una calificación.                                      |
+| Ratings                | `GET`    | `/api/v1/ratings`                           | Obtiene las calificaciones registradas.                         |
+| User Reputations       | `GET`    | `/api/v1/user-reputations/{userId}`         | Obtiene la reputación de un usuario.                            |
+| Notifications          | `POST`   | `/api/v1/notifications`                     | Registra una notificación.                                      |
+| Notifications          | `GET`    | `/api/v1/notifications`                     | Obtiene las notificaciones existentes.                          |
+| Owner Dashboard        | `GET`    | `/api/v1/owner-dashboard?ownerId={id}`      | Obtiene los indicadores del dashboard de un propietario.        |
+| Incidents              | `POST`   | `/api/v1/incidents`                         | Registra un incidente.                                          |
+| Incidents              | `GET`    | `/api/v1/incidents`                         | Obtiene los incidentes registrados.                             |
+| Emergency Alerts       | `POST`   | `/api/v1/emergency-alerts`                  | Registra una alerta de emergencia.                              |
+| Emergency Alerts       | `GET`    | `/api/v1/emergency-alerts`                  | Obtiene las alertas registradas.                                |
+| Files                  | `POST`   | `/api/v1/files`                             | Permite cargar imágenes relacionadas con espacios o incidentes. |
+| Files                  | `GET`    | `/api/v1/files/{fileName}`                  | Recupera una imagen almacenada.                                 |
+
+##### Evidencia de creación de un espacio de estacionamiento
+
+Para comprobar el funcionamiento de las operaciones de escritura se utilizó el endpoint:
+
+```http
+POST /api/v1/parking-spaces
+```
+
+Este servicio permite registrar un nuevo espacio perteneciente a un propietario. Durante la prueba se utilizó un recurso con información de dirección, nombre, tarifa por hora, características y periodos de disponibilidad.
+
+Ejemplo del request utilizado:
+
+```json
+{
+  "ownerId": 1,
+  "address": "Av. Javier Prado 1234",
+  "name": "Cochera Javier Prado",
+  "hourlyRate": 8.5,
+  "features": "Techada, portón automático",
+  "availabilityPeriods": [
+    {
+      "dayOfWeek": "MONDAY",
+      "startTime": "09:00",
+      "endTime": "18:00"
+    }
+  ]
+}
+```
+
+La solicitud fue procesada satisfactoriamente por el servidor, obteniendo el código:
+
+```text
+201 Created
+```
+
+junto con la representación del espacio registrado.
+
+<div align="center">
+  <img src="../assets/chapter-05/swagger-parking-spaces-post.png" alt="POST Parking Space Swagger Evidence">
+  <p>
+    <i><b>Figura X.</b> Ejecución del endpoint POST /api/v1/parking-spaces mediante Swagger UI, registrando un nuevo espacio de estacionamiento y obteniendo una respuesta HTTP 201. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+Esta evidencia permite comprobar que los Web Services desplegados son capaces de recibir información desde un cliente, validar los datos proporcionados y persistir correctamente un nuevo recurso.
+
+##### Evidencia de consulta de espacios de estacionamiento
+
+Posteriormente se realizó una operación de lectura con el objetivo de verificar que el recurso previamente registrado pudiera ser recuperado desde el backend.
+
+Para ello se utilizó:
+
+```http
+GET /api/v1/parking-spaces
+```
+
+mediante la URL:
+
+```text
+https://parkshare-platform.onrender.com/api/v1/parking-spaces
+```
+
+El servidor respondió satisfactoriamente mediante:
+
+```text
+200 OK
+```
+
+retornando una colección JSON que contiene el espacio registrado anteriormente.
+
+<div align="center">
+  <img src="../assets/chapter-05/swagger-parking-spaces-get.png" alt="GET Parking Spaces Swagger Evidence">
+  <p>
+    <i><b>Figura X.</b> Ejecución del endpoint GET /api/v1/parking-spaces mediante Swagger UI, obteniendo una respuesta HTTP 200 con el espacio de estacionamiento previamente registrado. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La respuesta contiene información como:
+
+```json
+{
+  "id": 1,
+  "ownerId": 1,
+  "address": "Av. Javier Prado 1234",
+  "name": "Cochera Javier Prado",
+  "hourlyRate": 8.5,
+  "features": "Techada, portón automático",
+  "publicationStatus": "paused",
+  "availabilityPeriods": [
+    {
+      "dayOfWeek": "MONDAY",
+      "startTime": "09:00",
+      "endTime": "18:00"
+    }
+  ]
+}
+```
+
+La ejecución consecutiva de las operaciones `POST` y `GET` permite evidenciar el funcionamiento del ciclo de creación y recuperación de los espacios administrados por ParkShare.
+
+##### Evidencia del servicio de Report & Analytics
+
+Durante el Sprint 3 también se implementó un servicio destinado a proporcionar los indicadores utilizados en el dashboard de los propietarios.
+
+La consulta se realiza mediante:
+
+```http
+GET /api/v1/owner-dashboard?ownerId={id}
+```
+
+El parámetro `ownerId` corresponde al identificador del propietario cuyos indicadores se desean consultar.
+
+Durante la prueba se utilizó:
+
+```text
+ownerId = 1
+```
+
+generándose la solicitud:
+
+```text
+https://parkshare-platform.onrender.com/api/v1/owner-dashboard?ownerId=1
+```
+
+El servidor respondió satisfactoriamente con:
+
+```text
+200 OK
+```
+
+La respuesta contiene indicadores calculados por el backend relacionados con la actividad del propietario, entre ellos:
+
+- ingresos mensuales;
+- variación de ingresos;
+- reservas pendientes;
+- reservas en curso;
+- cantidad de publicaciones;
+- porcentaje de ocupación;
+- calificación promedio;
+- ingresos correspondientes a la semana;
+- actividad reciente.
+
+<div align="center">
+  <img src="../assets/chapter-05/swagger-owner-dashboard.png" alt="Owner Dashboard Swagger Evidence">
+  <p>
+    <i><b>Figura X.</b> Ejecución del endpoint GET /api/v1/owner-dashboard mediante Swagger UI para consultar los indicadores correspondientes al propietario con identificador 1, obteniendo una respuesta HTTP 200. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+Esta operación permite que los indicadores requeridos por la interfaz del propietario sean calculados por los Web Services y posteriormente consumidos por la Web Application de ParkShare.
+
+##### Evidencias de implementación
+
+El código correspondiente a los Web Services se encuentra centralizado en el repositorio **ParkShare-Platform**. Entre los commits relacionados con la implementación y preparación de esta primera versión se encuentran:
+
+| Commit ID | Commit Message                                                                       | Descripción                                                                                             |
+| --------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| `bd8138e` | `feat(report-analytics): add owner dashboard endpoint`                               | Implementación del servicio que proporciona los indicadores utilizados en el dashboard del propietario. |
+| `59d6f27` | `feat(seed): add demo data seeder with listings, reservations, ratings and profiles` | Incorporación de datos de demostración correspondientes a los principales recursos de la plataforma.    |
+| `03b5e8b` | `chore(docker): add Dockerfile and .dockerignore for Render deployment`              | Incorporación de la configuración necesaria para desplegar los Web Services mediante Render.            |
+| `caa623e` | `Merge branch 'release/1.0.0' into main`                                             | Integración de la primera versión estable de ParkShare Platform en la rama principal.                   |
+
+Como resultado del Sprint 3, ParkShare cuenta con una primera versión funcional y desplegada de sus Web Services, documentada mediante OpenAPI/Swagger y accesible desde la Web Application para soportar las principales operaciones de la plataforma.
+
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
