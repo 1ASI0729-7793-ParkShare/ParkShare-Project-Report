@@ -720,6 +720,96 @@ Link de la Web Application: [COMPLETAR]
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
+Durante el Sprint 3, el equipo concentró el trabajo de implementación principalmente en la evolución de la **Web Application** y en el desarrollo de la primera versión de los **Web Services de ParkShare**.
+
+En el backend se desarrollaron servicios para autenticación y autorización, gestión de espacios y publicaciones, reservas, pagos, analítica para propietarios, almacenamiento de archivos, reportes de incidentes y alertas de emergencia. Asimismo, se incorporaron configuraciones para persistencia, seguridad y despliegue de la aplicación.
+
+En la Web Application se integraron los servicios REST desarrollados con Spring Boot, reemplazando progresivamente la dependencia de la Fake API utilizada en etapas anteriores. También se implementaron funcionalidades relacionadas con reservas, historial del conductor, gestión de espacios, pagos, reportes de incidentes, alertas de emergencia y el dashboard del propietario.
+
+Los principales repositorios involucrados durante este Sprint fueron:
+
+- **Web Services:** `1ASI0729-7793-ParkShare/ParkShare-Platform`
+- **Web Application:** `1ASI0729-7793-ParkShare/ParkShare-frontend`
+
+A continuación se presentan commits representativos de los principales avances realizados durante el Sprint 3.
+
+| Repository           | Branch    | Commit Id | Commit Message                                                                            | Commit Message Body                                                                         | Committed on |
+| -------------------- | --------- | --------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------ |
+| `ParkShare-Platform` | `develop` | `158193c` | `feat(iam): add sign-up, sign-in, users and roles endpoints`                              | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `cb9b260` | `feat(shared): add local file storage service and files endpoint`                         | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `e6e04c6` | `feat(booking): extend parking listing with features, photos and availability periods`    | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `0ff3dce` | `feat(booking): add owner filter and partial PATCH for parking listings`                  | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `e671a67` | `feat(incidents): accept multiple incident types and photo lists`                         | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `d011dd6` | `feat(emergency-alerts): update alert resources and controller contract`                  | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `735ab8f` | `feat(payments): add payouts, transfer and transactions endpoints`                        | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `bd8138e` | `feat(report-analytics): add owner dashboard endpoint`                                    | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `59d6f27` | `feat(seed): add demo data seeder with listings, reservations, ratings and profiles`      | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `develop` | `03b5e8b` | `chore(docker): add Dockerfile and .dockerignore for Render deployment`                   | —                                                                                           | 2026-11-14   |
+| `ParkShare-Platform` | `main`    | `caa623e` | `Merge branch 'release/1.0.0' into main`                                                  | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `0b0dab6` | `feat(emergency-alerts): add domain model for emergency alerts`                           | —                                                                                           | 2026-11-12   |
+| `ParkShare-frontend` | `develop` | `0734507` | `feat(incident-reporting): add presentation for incident reporting`                       | —                                                                                           | 2026-11-12   |
+| `ParkShare-frontend` | `develop` | `d91f78f` | `config: point environments to the Spring Boot backend and add files and dashboard paths` | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `e70a867` | `feat(shared): add FileUploadService to upload photos to the backend`                     | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `21a7a6c` | `feat(incidents): upload incident photos before creating the report`                      | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `de32ea3` | `feat(parking-spaces): add HTTP repository backed by /parking-listings`                   | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `5754387` | `fix(payments): request payout transfer through POST /owner-payouts/{id}/transfer`        | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `804a704` | `feat(report-analytics): consume server-calculated owner dashboard`                       | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `99c68e3` | `feat(booking): add driver history view with summary and filters`                         | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `8dd0525` | `feat(booking): route /driver/history to the history view`                                | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `develop` | `c1b34fd` | `ci: add GitHub Pages deployment workflow`                                                | —                                                                                           | 2026-11-14   |
+| `ParkShare-frontend` | `main`    | `7767e7a` | `Merge branch 'release/2.0.0' into main`                                                  | Merge de la versión `2.0.0` e integración de los cambios del Sprint 3 en la rama principal. | 2026-11-14   |
+| `ParkShare-frontend` | `main`    | `1be384d` | `fix(env): point development environment to the deployed backend`                         | —                                                                                           | 2026-11-14   |
+
+##### Web Services Development
+
+El desarrollo del repositorio `ParkShare-Platform` permitió construir la primera versión completa del backend de ParkShare siguiendo una organización modular y basada en los bounded contexts definidos previamente.
+
+Entre los principales avances se encuentran:
+
+- implementación de registro, autenticación y generación de JWT;
+- persistencia mediante Spring Data JPA;
+- gestión de espacios de estacionamiento;
+- publicación y actualización de parking listings;
+- gestión de reservas;
+- almacenamiento y recuperación de imágenes;
+- gestión de pagos y transferencias para propietarios;
+- calificaciones y reputación;
+- reportes de incidentes;
+- alertas de emergencia;
+- cálculo de indicadores para el dashboard del propietario;
+- incorporación de datos de demostración;
+- configuración para despliegue mediante Docker y Render.
+
+Al finalizar este incremento, la primera versión del backend fue consolidada mediante la integración de `release/1.0.0` en la rama `main`.
+
+##### Web Application Development
+
+En el repositorio `ParkShare-frontend` se desarrollaron e integraron las funcionalidades necesarias para consumir los Web Services implementados durante el Sprint.
+
+Uno de los principales cambios fue la sustitución progresiva de las fuentes de datos simuladas por repositorios HTTP conectados con la API REST de ParkShare.
+
+La configuración del frontend fue actualizada para utilizar como URL base:
+
+```text id="d00hhk"
+https://parkshare-platform.onrender.com/api/v1
+```
+
+Entre los principales avances se encuentran:
+
+- integración del módulo de espacios con los Web Services;
+- integración del dashboard del propietario con los cálculos realizados por el backend;
+- integración del sistema de pagos y transferencias;
+- carga de fotografías mediante el servicio de archivos;
+- implementación de reportes de incidentes;
+- implementación de alertas de emergencia;
+- incorporación del historial de reservas del conductor;
+- actualización de rutas y navegación;
+- configuración de los environments para consumir el backend desplegado.
+
+Finalmente, los cambios desarrollados durante el Sprint fueron consolidados mediante la rama `release/2.0.0` e integrados posteriormente en `main`.
+
+Como resultado, el Sprint 3 permitió avanzar desde una Web Application respaldada principalmente por datos simulados hacia una solución integrada con una **API REST desplegada**, estableciendo comunicación entre el frontend Angular y los Web Services desarrollados con Spring Boot.
+
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
