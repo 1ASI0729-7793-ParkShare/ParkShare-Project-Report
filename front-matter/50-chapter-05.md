@@ -732,6 +732,139 @@ Link de la Web Application: [COMPLETAR]
 
 ### 5.3.1. Diseño de Entrevistas
 
+Las entrevistas de validación de ParkShare tienen como objetivo conocer la opinión de los usuarios pertenecientes a los segmentos objetivo respecto al Landing Page y a las principales funcionalidades propuestas en la Web Application.
+
+A diferencia de las entrevistas realizadas durante la etapa de Needfinding, en esta etapa los participantes podrán observar directamente la solución desarrollada. Durante cada sesión, el entrevistador realizará un recorrido por las principales secciones de ParkShare, explicando brevemente las opciones disponibles y mostrando los flujos relacionados con el segmento al que pertenece el participante.
+
+Posteriormente, el entrevistado podrá explorar la interfaz y responder una serie de preguntas orientadas a evaluar la claridad de la información, facilidad de uso, organización de las opciones, percepción de seguridad y utilidad de las funcionalidades presentadas.
+
+La sesión se desarrollará siguiendo la siguiente estructura:
+
+1. Presentación breve de ParkShare.
+2. Recorrido por el Landing Page.
+3. Presentación de las principales funcionalidades de la Web Application relacionadas con el segmento objetivo.
+4. Exploración de la interfaz por parte del entrevistado.
+5. Preguntas de validación.
+6. Comentarios y sugerencias finales.
+
+Para la validación se consideran los dos segmentos objetivo definidos para ParkShare:
+
+- **Segmento 1: Conductores en Zonas Urbanas.**
+- **Segmento 2: Propietarios de Espacios y Negocios.**
+
+#### Segmento 1: Conductores en Zonas Urbanas
+
+Para los participantes pertenecientes al segmento de conductores se presentará inicialmente el Landing Page de ParkShare, explicando su propuesta de valor y las principales secciones disponibles.
+
+Posteriormente se mostrarán las principales funcionalidades de la Web Application relacionadas con un conductor.
+
+El recorrido incluirá los siguientes elementos:
+
+- Búsqueda de espacios de estacionamiento.
+- Visualización de espacios disponibles.
+- Información y detalles de una cochera.
+- Proceso de reserva.
+- Confirmación de una reserva.
+- Consulta de reservas realizadas.
+- Gestión del perfil y datos del vehículo.
+- Opciones relacionadas con la verificación de identidad.
+
+Estos elementos corresponden principalmente a los User Flows definidos previamente para el conductor:
+
+- **Buscar y reservar una cochera.**
+- **Consultar historial de reservas.**
+- **Gestionar perfil y vehículos.**
+
+Después de mostrar la solución, se realizarán las siguientes preguntas:
+
+1. Luego de revisar ParkShare, ¿te queda claro cuál es el objetivo de la plataforma?
+
+2. ¿Qué opinas de la forma en la que está organizada la página?
+
+3. ¿Te resultaría fácil encontrar una cochera disponible utilizando esta plataforma?
+
+4. ¿La información mostrada sobre cada cochera te parece suficiente para decidir si utilizarla?
+
+5. ¿Qué información consideras más importante antes de reservar un estacionamiento?
+
+6. ¿El proceso de reserva te parece fácil de comprender?
+
+7. ¿Te resulta clara la sección donde puedes consultar tus reservas?
+
+8. ¿Te parece sencillo encontrar y modificar la información de tu perfil y vehículo?
+
+9. ¿Qué opinas de las opciones de verificación de identidad?
+
+10. ¿Hay alguna sección, botón u opción que te haya resultado confusa?
+
+11. ¿Hay alguna información que consideres que falta en la plataforma?
+
+12. ¿Qué funcionalidad presentada te parece más útil?
+
+13. ¿Qué cambiarías o mejorarías de la aplicación?
+
+14. En una escala del 1 al 5, ¿qué tan fácil consideras que sería utilizar ParkShare?
+
+15. ¿Utilizarías ParkShare si necesitaras encontrar estacionamiento? ¿Por qué?
+
+#### Segmento 2: Propietarios de Espacios y Negocios
+
+Para los participantes pertenecientes al segmento de propietarios se realizará inicialmente un recorrido por el Landing Page, mostrando cómo ParkShare presenta la posibilidad de aprovechar espacios de estacionamiento disponibles para generar ingresos.
+
+Posteriormente se mostrarán las principales opciones de la Web Application relacionadas con la administración de espacios de estacionamiento.
+
+El recorrido incluirá:
+
+- Visualización de sus espacios de estacionamiento.
+- Publicación de una nueva cochera.
+- Registro de dirección y características del espacio.
+- Configuración de precio.
+- Configuración de disponibilidad.
+- Edición de una cochera publicada.
+- Visualización de estados de las cocheras.
+- Consulta de ingresos generados.
+- Información relacionada con reservas y actividad del espacio.
+
+Estos elementos corresponden principalmente a los User Flows definidos para propietarios:
+
+- **Publicar una cochera.**
+- **Administrar espacios publicados.**
+- **Consultar ingresos.**
+
+Después del recorrido se realizarán las siguientes preguntas:
+
+1. Luego de revisar ParkShare, ¿te queda claro qué beneficios ofrece la plataforma a un propietario?
+
+2. ¿Qué opinas de la organización de las opciones para administrar una cochera?
+
+3. ¿Te parece fácil identificar dónde publicar un nuevo espacio?
+
+4. ¿Los datos solicitados para registrar una cochera te parecen adecuados?
+
+5. ¿Te parece claro cómo establecer el precio del estacionamiento?
+
+6. ¿Te resulta comprensible cómo indicar los horarios o periodos en los que la cochera estará disponible?
+
+7. ¿Te parece sencillo modificar posteriormente los datos de una cochera?
+
+8. ¿La información mostrada sobre las cocheras publicadas te parece suficiente?
+
+9. ¿La sección de ingresos resulta fácil de comprender?
+
+10. ¿Qué información te gustaría conocer sobre los conductores antes de aceptar una reserva?
+
+11. ¿Las medidas de seguridad y verificación mostradas te generarían confianza para ofrecer tu espacio?
+
+12. ¿Hay alguna opción o sección que te haya resultado confusa?
+
+13. ¿Qué funcionalidad presentada te parece más útil como propietario?
+
+14. ¿Qué elemento añadirías o mejorarías?
+
+15. En una escala del 1 al 5, ¿qué tan fácil consideras que sería administrar una cochera mediante ParkShare?
+
+16. ¿Utilizarías ParkShare para ofrecer un espacio de estacionamiento disponible? ¿Por qué?
+
 ### 5.3.2. Registro de Entrevistas
 
 ### 5.3.3. Evaluaciones según heurísticas
