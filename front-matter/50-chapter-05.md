@@ -812,6 +812,187 @@ Como resultado, el Sprint 3 permitió avanzar desde una Web Application respalda
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 3 se amplió la Web Application de ParkShare mediante la incorporación e integración de funcionalidades dirigidas tanto a conductores como a propietarios de espacios de estacionamiento.
+
+En este incremento se logró integrar la aplicación Angular con los Web Services desarrollados mediante Spring Boot, permitiendo ejecutar operaciones relacionadas con el dashboard del propietario, administración de espacios de estacionamiento, historial de reservas, consulta de ingresos y reporte de incidentes.
+
+Las siguientes evidencias corresponden a la ejecución de la versión desarrollada durante el Sprint 3.
+
+##### Owner Dashboard
+
+Para el segmento de propietarios se implementó un dashboard que centraliza los principales indicadores relacionados con la actividad de sus espacios de estacionamiento.
+
+Esta vista permite consultar indicadores como ingresos mensuales, reservas pendientes, reservas en curso, porcentaje de ocupación, calificación promedio e ingresos correspondientes a la semana. También incluye información relacionada con la actividad reciente del propietario.
+
+La información presentada es obtenida mediante los Web Services de ParkShare, principalmente a través del endpoint:
+
+```text
+GET /api/v1/owner-dashboard?ownerId={id}
+```
+
+La ruta correspondiente dentro de la Web Application es:
+
+```text
+/owner/dashboard
+```
+
+<div align="center">
+  <img src="../assets/chapter-05/owner-dashboard.png" alt="ParkShare Owner Dashboard">
+  <p>
+    <i><b>Figura X.</b> Dashboard del propietario mostrando los principales indicadores relacionados con sus espacios de estacionamiento. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+Esta funcionalidad permite que el propietario pueda obtener una visión general del desempeño de sus publicaciones desde una única interfaz.
+
+##### Parking Space Management
+
+La Web Application incorpora un módulo destinado a la administración de los espacios de estacionamiento pertenecientes al propietario.
+
+La vista principal permite consultar los espacios registrados y acceder a diferentes operaciones relacionadas con su gestión, como publicación, edición, disponibilidad y configuración de precios.
+
+La ruta utilizada para esta funcionalidad es:
+
+```text
+/owner/parking-spaces
+```
+
+<div align="center">
+  <img src="../assets/chapter-05/owner-parking-spaces.png" alt="ParkShare Parking Space Management">
+  <p>
+    <i><b>Figura X.</b> Vista de administración de los espacios de estacionamiento registrados por el propietario. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La información mostrada en esta sección es recuperada desde los Web Services mediante los repositorios HTTP implementados en la Web Application.
+
+##### Parking Space Publication
+
+Como parte del módulo de administración de espacios, se implementó también el formulario para registrar y publicar nuevas cocheras dentro de ParkShare.
+
+La ruta correspondiente es:
+
+```text
+/owner/parking-spaces/new
+```
+
+Desde esta interfaz el propietario puede ingresar información como:
+
+- nombre del espacio;
+- dirección;
+- características disponibles;
+- tarifa por hora;
+- fotografías;
+- día de disponibilidad;
+- hora de inicio;
+- hora de finalización.
+
+<div align="center">
+  <img src="../assets/chapter-05/owner-parking-spaces-new.png" alt="ParkShare Create Parking Space">
+  <p>
+    <i><b>Figura X.</b> Formulario utilizado por el propietario para registrar y publicar un nuevo espacio de estacionamiento. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+Los datos ingresados pueden ser enviados posteriormente hacia los Web Services encargados de administrar los espacios y publicaciones disponibles dentro de ParkShare.
+
+##### Driver Reservation History
+
+Para el segmento de conductores se incorporó una vista destinada a consultar el historial de reservas realizadas mediante la plataforma.
+
+La ruta correspondiente es:
+
+```text
+/driver/history
+```
+
+La interfaz presenta un resumen de la actividad del conductor, incluyendo información como reservas completadas, cantidad de horas utilizadas y monto acumulado gastado.
+
+También se incorporaron filtros que permiten organizar las reservas según su estado.
+
+<div align="center">
+  <img src="../assets/chapter-05/driver-history.png" alt="ParkShare Driver Reservation History">
+  <p>
+    <i><b>Figura X.</b> Historial de reservas del conductor mostrando información resumida y filtros según el estado de las reservas. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+Esta funcionalidad proporciona al conductor un registro centralizado de las reservas realizadas previamente mediante ParkShare.
+
+##### Owner Earnings and Payouts
+
+Durante el Sprint 3 también se integró la funcionalidad destinada a la visualización de ingresos del propietario.
+
+La sección se encuentra disponible mediante la ruta:
+
+```text
+/owner/earnings/owner-payouts
+```
+
+Desde esta interfaz el propietario puede consultar su balance, revisar las transacciones asociadas a sus espacios de estacionamiento y solicitar la transferencia del saldo disponible.
+
+<div align="center">
+  <img src="../assets/chapter-05/owner-earnings-owner-payouts.png" alt="ParkShare Owner Earnings and Payouts">
+  <p>
+    <i><b>Figura X.</b> Vista de ingresos, balance y transacciones correspondientes al propietario. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La funcionalidad se encuentra integrada con los siguientes servicios:
+
+```text
+GET /api/v1/owner-payouts?ownerId={id}
+
+GET /api/v1/payment-transactions?ownerId={id}
+
+POST /api/v1/owner-payouts/{id}/transfer
+```
+
+De esta manera, la información financiera presentada en la interfaz es obtenida desde los Web Services de ParkShare.
+
+##### Incident Reporting
+
+Se incorporó también una funcionalidad para que los conductores puedan registrar incidentes relacionados con los espacios de estacionamiento utilizados.
+
+La ruta correspondiente es:
+
+```text
+/driver/incidents
+```
+
+Desde esta interfaz el usuario puede registrar información relacionada con un incidente y consultar los reportes realizados previamente.
+
+<div align="center">
+  <img src="../assets/chapter-05/driver-incidents.png" alt="ParkShare Driver Incident Reporting">
+  <p>
+    <i><b>Figura X.</b> Vista destinada al registro y consulta de incidentes por parte del conductor. Fuente: elaboración propia.</i>
+  </p>
+</div>
+
+La funcionalidad también contempla la posibilidad de asociar fotografías al reporte, las cuales pueden ser procesadas mediante el servicio de almacenamiento de archivos implementado en el backend.
+
+##### Execution Summary
+
+Las evidencias presentadas permiten comprobar la ejecución de las principales funcionalidades desarrolladas e integradas durante el Sprint 3.
+
+Entre los principales resultados alcanzados se encuentran:
+
+- visualización del dashboard e indicadores del propietario;
+- administración de espacios de estacionamiento;
+- registro y publicación de nuevas cocheras;
+- consulta del historial de reservas del conductor;
+- consulta de ingresos y transacciones del propietario;
+- registro y seguimiento de incidentes;
+- integración de la Web Application Angular con los Web Services de ParkShare.
+
+El Sprint 3 permitió avanzar desde una aplicación respaldada principalmente por información simulada hacia una solución integrada, en la cual diferentes funcionalidades del frontend consumen los servicios REST proporcionados por `ParkShare-Platform`.
+
+##### Video de ejecución
+
+Como complemento a las evidencias presentadas, se incluye un video de ejecución en el que se muestran las principales funcionalidades desarrolladas durante el Sprint 3 y la navegación entre las diferentes secciones de la Web Application.
+
+**URL del video:** `[]`
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 3 se implementó y documentó la primera versión de los **Web Services de ParkShare**, desarrollados con **Spring Boot 3.5.7 y Java 21**. La solución expone una API RESTful encargada de brindar soporte a las principales funcionalidades de la plataforma, incluyendo autenticación, perfiles, gestión de espacios de estacionamiento, reservas, pagos, reputación, notificaciones y analítica para propietarios.
