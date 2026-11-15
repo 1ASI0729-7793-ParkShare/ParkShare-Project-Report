@@ -1673,6 +1673,43 @@ Después del recorrido se realizarán las siguientes preguntas:
 
 ### 5.3.2. Registro de Entrevistas
 
+#### Entrevista de Validación 1 — Segmento 2: Propietarios de Espacios y Negocios
+
+**Datos del entrevistado**
+
+- **Nombres y apellidos:** Daniel Pinedo Gonzalez
+- **Edad:** 21 años
+- **Distrito:** Ventanilla
+- **Segmento:** Propietarios de Espacios y Negocios
+- **Inicio de la entrevista:** 00:00
+- **Duración aproximada:** 8 minutos 30 segundos
+- **URL del video:** https://www.youtube.com/watch?v=lqYY3AHs86Y
+
+<div align="center">
+  <img src="../assets/chapter-05/interview-daniel.png" alt="Entrevista de validación a Daniel Pinedo Gonzalez">
+  <p>
+    <i><b>Figura X.</b> Entrevista de validación realizada a Daniel Pinedo Gonzalez, participante del segmento Propietarios de Espacios y Negocios.</i>
+  </p>
+</div>
+
+##### Resumen de la entrevista
+
+Durante la sesión se presentó inicialmente el Landing Page de ParkShare, explicando la propuesta de valor de la plataforma para conductores y propietarios. Posteriormente se realizó un recorrido por la Web Application desde la perspectiva del propietario, mostrando el dashboard, la administración de cocheras, el formulario para publicar un nuevo espacio y la sección destinada a ingresos y transferencias.
+
+El entrevistado manifestó comprender con facilidad la propuesta de ParkShare y consideró útil la posibilidad de publicar espacios disponibles para generar ingresos adicionales. Asimismo, indicó que la organización de las opciones dentro de la plataforma resulta ordenada y que las principales funcionalidades pueden identificarse con relativa facilidad después de un breve recorrido.
+
+Respecto al proceso de publicación de una cochera, consideró adecuados los datos solicitados, especialmente la dirección, tarifa, características, horarios y fotografías. También señaló que la configuración de la tarifa y de los periodos de disponibilidad resulta sencilla de comprender.
+
+En relación con la administración de los espacios publicados, el participante consideró que la información disponible es suficiente, aunque sugirió mostrar de manera más visible la cantidad de reservas realizadas en cada cochera.
+
+La sección de ingresos también fue percibida positivamente debido a la separación entre balance y transacciones, así como a la posibilidad de solicitar transferencias desde la misma plataforma.
+
+En cuanto a seguridad, el entrevistado manifestó que sería importante conocer información del conductor como su nombre, estado de verificación, calificación y datos básicos del vehículo. Asimismo, señaló que los mecanismos de verificación tanto para conductores como para propietarios incrementarían su confianza al momento de ofrecer un espacio.
+
+Como principal oportunidad de mejora, propuso incorporar estadísticas más detalladas para cada cochera, como los horarios con mayor cantidad de reservas y los ingresos generados individualmente por cada espacio.
+
+Finalmente, calificó la facilidad de administración de una cochera con **4 de 5** y afirmó que utilizaría ParkShare para ofrecer un espacio disponible, especialmente como una alternativa para aprovechar una cochera que permanece vacía durante determinadas horas y generar ingresos adicionales.
+
 ### 5.3.3. Evaluaciones según heurísticas
 
 ## 5.4. Video About-the-Product
