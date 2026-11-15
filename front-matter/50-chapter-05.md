@@ -1673,6 +1673,40 @@ Después del recorrido se realizarán las siguientes preguntas:
 
 ### 5.3.2. Registro de Entrevistas
 
+#### Entrevista de Validación 1 — Segmento 1: Conductores en Zonas Urbanas
+
+**Datos del entrevistado**
+
+- **Nombres y apellidos:** Richard Palomino 
+- **Edad:** 20 años
+- **Distrito:** SJL
+- **Segmento:** Conductores en Zonas Urbanas
+- **Inicio de la entrevista:** 00:00
+- **Duración aproximada:** 9 minutos 16 segundos
+- **URL del video:** https://youtu.be/ZxhUMCFCTQE?si=ejNBluJLtlklTBX5 
+
+<div align="center">
+  <img src="../assets/chapter-05/interview-richard.png" alt="Entrevista de validación a Daniel Pinedo Gonzalez">
+  <p>
+    <i><b>Figura X.</b> Entrevista de validación realizada a Richard Palomino, participante del segmento Conductores en Zonas Urbanas</i>
+  </p>
+</div>
+
+##### Resumen de la entrevista
+
+Durante la sesión con el segmento de conductores, se presentó  el Landing Page de ParkShare, explicando el funcionamiento del proyecto y su calculadora de tarifas. Posteriormente, el entrevistado —Richard Palomino, de 20 años y residente en San Juan de Lurigancho— interactuó con la plataforma revisando el proceso de búsqueda, registro de vehículo y reserva de espacios.
+
+El participante manifestó comprender rápidamente la propuesta de valor de ParkShare y consideró que la navegación resulta ordenada e intuitiva, destacando la búsqueda y reserva en tiempo real mediante mapa o lista como su función más útil.
+
+Respecto a la información de las cocheras, consideró adecuados los datos básicos mostrados (ubicación, precio, horarios y fotos), aunque sugirió detallar el tamaño del espacio (para camionetas), si es techado, las medidas de seguridad (cámaras, vigilancia, rejas) y las valoraciones de otros usuarios.
+
+En cuanto al proceso de reserva y gestión de cuenta, encontró los pasos claros y valoró poder registrar los datos de su vehículo. No obstante, recomendó mostrar un resumen del costo total antes de pagar, separar las reservas por estado (activas, próximas y pasadas), explicar mejor la verificación de identidad y las políticas de cancelación, y añadir secciones de soporte, métodos de pago y preguntas frecuentes.
+
+Como principales oportunidades de mejora, propuso incorporar filtros avanzados (por precio, horario y distancia), un sistema de reseñas, notificaciones de recordatorio, navegación hacia la cochera y la opción de guardar espacios favoritos.
+
+Finalmente, calificó la facilidad de uso con **4.5 de 5** y afirmó que utilizaría ParkShare en zonas congestionadas como Miraflores o San Isidro para ahorrar tiempo, siempre que cuente con buenas reseñas y precios competitivos.
+
+
 #### Entrevista de Validación 1 — Segmento 2: Propietarios de Espacios y Negocios
 
 **Datos del entrevistado**
@@ -1709,6 +1743,12 @@ En cuanto a seguridad, el entrevistado manifestó que sería importante conocer 
 Como principal oportunidad de mejora, propuso incorporar estadísticas más detalladas para cada cochera, como los horarios con mayor cantidad de reservas y los ingresos generados individualmente por cada espacio.
 
 Finalmente, calificó la facilidad de administración de una cochera con **4 de 5** y afirmó que utilizaría ParkShare para ofrecer un espacio disponible, especialmente como una alternativa para aprovechar una cochera que permanece vacía durante determinadas horas y generar ingresos adicionales.
+
+
+
+
+
+
 
 ### 5.3.3. Evaluaciones según heurísticas
 
