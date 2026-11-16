@@ -1712,4 +1712,19 @@ Finalmente, calificó la facilidad de administración de una cochera con **4 de 
 
 ### 5.3.3. Evaluaciones según heurísticas
 
+**Escala utilizada (criterio de evaluación):**
+- 1 = Cumplimiento muy bajo (requiere rediseño)
+- 2 = Cumplimiento bajo (requiere correcciones mayores)
+- 3 = Cumplimiento aceptable (requiere mejoras)
+- 4 = Cumplimiento bueno (ajustes menores)
+- 5 = Cumplimiento completo (sin observaciones críticas)
+
+| Heurística  | Hallazgo principal                                  | Evidencia observada | Puntaje (1-5) |
+| :--- |:----------------------------------------------------| :--- | :---: |
+|  Relación sistema–mundo real | Terminología alineada al negocio de cocheras         | Entrevistados comprenden módulos sin capacitación previa | 5 |
+|  Consistencia y estándares | Coherencia visual entre landing y web app           | Design system uniforme en colores, tipografía y navegación | 5 |
+|  Flexibilidad y eficiencia | Dashboard accesible desde navegador sin instalación | Acceso desde Chrome en desktop y móvil| 4 |
+|  Diseño estético y minimalista | Interfaz limpia orientada a datos operativos        | Entrevistados no reportan sobrecarga visual | 5 | 
+
+
 ## 5.4. Video About-the-Product
