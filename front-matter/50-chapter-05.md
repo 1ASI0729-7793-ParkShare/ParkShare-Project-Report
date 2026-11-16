@@ -593,17 +593,17 @@ En esta sección se describen los principales acuerdos y definiciones realizados
 | :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Sprint #**                            | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Sprint Planning Background**          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Date                                    | [COMPLETAR: AAAA-MM-DD]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Time                                    | [COMPLETAR: HH:MM]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Date                                    | 2026-10-10                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Time                                    | 16:30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Location                                | Reunión virtual (Discord)                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Prepared By                             | [COMPLETAR: nombre del integrante]                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Prepared By                             | Tello Palacios, Fabrizio Rafael                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Attendees (to planning meeting)         | Palomino Vilcañaupa, Daril Johan - Tello Palacios, Fabrizio Rafael - Checa Burga, Oscar Diego - Yanac Flores, Gabriel Stefano - Urviola Condori, Mateo Sebastian                                                                                                                                                                                                                                                                                                                                       |
 | **Sprint 2 – Review Summary**           | En esta entrega se tomó en cuenta el Sprint 1 (Landing Page), el Product Backlog definido y los prototipos de la Web Application diseñados en el capítulo IV.                                                                                                                                                                                                                                                                                                                                          |
-| **Sprint 2 – Retrospective Summary**    | [COMPLETAR: qué funcionó, qué no y qué se mejorará en el siguiente sprint]                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Sprint 2 – Retrospective Summary**    | Funcionó correctamente la separación de responsabilidades por capas (DDD) y el uso de json-server para validar los flujos de interfaz sin depender aún del backend. Como dificultad, se presentaron ajustes en las rutas por rol y validaciones de formularios, por lo que para el Sprint 3 se acordó estandarizar los contratos de endpoints antes de iniciar la integración con Spring Bootsprint                                                                                                                                                                                                                                                                                                                     |
 | **Sprint Goal & User Stories**          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Sprint 2 Goal**                       | Nuestro objetivo es construir la primera versión de la Web Application de ParkShare, con una navegación clara por rol y un perfil de conductor funcional. Consideramos que esto permitirá a los conductores mantener actualizados los datos de su vehículo y gestionar sus documentos de verificación. Confirmaremos el éxito de este objetivo cuando el conductor pueda consultar, editar y guardar la información de su vehículo, y cargar sus documentos, con los datos persistidos en la Fake Api. |
 | **User Stories incluidas en el Sprint** | **US04**: Registro de vehículo; **US03**: Verificación de identidad (carga de documentos y estados de revisión).                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Sprint 2 Velocity**                   | [COMPLETAR según Trello]                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Sprint 2 Velocity**                   | 11 Story PointsTrello                                                                                                                                                                                                                                                                                                                                                      |
 | **Sum of Story Points**                 | 11 Story Points (US04: 3, US03: 8)                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
@@ -628,23 +628,57 @@ El seguimiento del Sprint Backlog se administró mediante Trello, con las column
 
 | User Story  | Tarea técnica                                                                                                      |   Estado    |
 | :---------- | :----------------------------------------------------------------------------------------------------------------- | :---------: |
-| Transversal | Configuración del proyecto Angular, Angular Material, tema y estructura por bounded contexts (`shared`, `profile`) | [COMPLETAR] |
-| Transversal | Layout con barra lateral, selector de rol Conductor / Propietario y rutas por vista                                | [COMPLETAR] |
-| Transversal | Internacionalización con ngx-translate (EN / ES) y selector de idioma                                              | [COMPLETAR] |
-| US04        | Entidad `Profile`, assembler, endpoint y servicio de infraestructura                                               | [COMPLETAR] |
-| US04        | Vista de detalle del perfil con datos del vehículo registrado                                                      | [COMPLETAR] |
-| US04        | Formulario de edición del vehículo con validaciones (placa, modelo, tipo)                                          | [COMPLETAR] |
-| US03        | Entidad `VerificationDocument`, assembler, endpoint y servicio                                                     | [COMPLETAR] |
-| US03        | Lista de documentos con estado (Verificado, En revisión, Rechazado) y carga de archivo                             | [COMPLETAR] |
-| Transversal | API simulada con json-server (`db.json`)                                                                           | [COMPLETAR] |
+| Transversal | Configuración del proyecto Angular, Angular Material, tema y estructura por bounded contexts (`shared`, `profile`) | TO-DONE     |
+| Transversal | Layout con barra lateral, selector de rol Conductor / Propietario y rutas por vista                                | TO-DONE     |
+| Transversal | Internacionalización con ngx-translate (EN / ES) y selector de idioma                                              |  TO-DONE    |
+| US04        | Entidad `Profile`, assembler, endpoint y servicio de infraestructura                                               | TO-DONE     |
+| US04        | Vista de detalle del perfil con datos del vehículo registrado                                                      | TO-DONE     |
+| US04        | Formulario de edición del vehículo con validaciones (placa, modelo, tipo)                                          | TO-DONE     |
+| US03        | Entidad `VerificationDocument`, assembler, endpoint y servicio                                                     | TO-DONE     |
+| US03        | Lista de documentos con estado (Verificado, En revisión, Rechazado) y carga de archivo                             | TO-DONE     |
+| Transversal | API simulada con json-server (`db.json`)                                                                           | TO-DONE     |
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
 En este Sprint se logró la implementación de la estructura base de la Web Application de ParkShare y del módulo de perfil del conductor, aplicando una arquitectura por capas (domain, application, infrastructure y presentation) separada en bounded contexts, con estado manejado mediante signals y sin valores fijos en el código (URLs en archivos de entorno y textos en archivos de idioma).
 
-| Repository  | Commit ID     | Commit Message | Commit Message Body | Commit Date |
-| :---------- | :------------ | :------------- | :------------------ | :---------- |
-| [COMPLETAR] | `[COMPLETAR]` | `[COMPLETAR]`  | [COMPLETAR]         | [COMPLETAR] |
+| Repository           | Branch    | Commit Id | Commit Message                                                                                                     | Commit Message Body | Committed on |
+| :------------------- | :-------- | :-------- | :----------------------------------------------------------------------------------------------------------------- | :------------------ | :----------- |
+| `ParkShare-frontend` | `main`    | `77b3cd7` | `Merge branch 'release/1.0.0' into main`                                                                           | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `bcb9971` | `feat(dashboard): create dashboard view`                                                                           | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `5c6385c` | `Merge branch 'feature/booking.1' into develop`                                                                    | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `5e1f219` | `update(booking): add day time`                                                                                    | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `aab1937` | `update(booking): add owner requets`                                                                               | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `2b33956` | `update(booking): add booking routes types service`                                                                | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `f04e5bb` | `update(booking): add driver-reservation`                                                                          | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `09a9c05` | `update(booking): add parking-listing`                                                                             | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `b396d9b` | `update(booking): add driver-search`                                                                               | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `945fd33` | `update(booking): add listing`                                                                                     | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `ef446ee` | `update(booking): add reservation`                                                                                 | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `8a6fa6b` | `update(booking): add request component`                                                                           | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `bd8d7bc` | `update(booking): add search-filter component`                                                                     | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `946bb5d` | `update(booking): add booking store`                                                                               | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `6c0b933` | `Merge pull request #1 from 1ASI0729-7793-ParkShare/feature/Payment-Payouts`                                       | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `ba495ea` | `feat(payments): update owner payout details and adjust navigation routes`                                         | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `53a983d` | `feat: add reputation notifications feature with components for notifications, ratings, and user reputation`       | —                   | 2026-10-09   |
+| `ParkShare-frontend` | `develop` | `8f4e3cd` | `feat(payments): implement owner income management with payout and transaction details.`                           | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `6c7dd8b` | `Merge branch 'feature/reputation&notifications' into develop`                                                     | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `144f0af` | `feat(notifications-page): create notifications page component with recipient ID input and notification loading`   | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `9065171` | `feat(reputation-page): create reputation page component with user ID input and data loading`                      | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `5a8645a` | `feat(reputation-summary): create reputation summary component with user reputation input`                         | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `ec87136` | `feat(rating-form): create rating form component with score selection and submission logic`                        | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `728598b` | `feat(notification-bell): create notification bell component with dynamic loading of notifications`               | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `dec776a` | `feat(notifications): create notifications page component with dynamic content display`                            | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `867e397` | `feat(reputation): create reputation page component with reviews display`                                          | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `0b4ffb3` | `feat: Add parking space title and features`                                                                       | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `6073420` | `fix: Align parking-space routes to owner area`                                                                    | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `1fa3cd8` | `feat(booking-verification): implement HttpBookingVerificationAdapter for managing booking verification`           | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `c197170` | `feat(notification): implement HttpNotificationRepository for managing notifications`                              | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `0a40b33` | `Merge branch 'feature/parking-space-management' into develop`                                                     | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `7ef66d8` | `feat(rating): implement HttpRatingRepository for managing ratings and user reputations`                           | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `b21dbb3` | `feat(notification): implement NotificationsApiEndpoint for handling notification API interactions`                | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `d11954d` | `feat(reputation): implement UserReputationsApiEndpoint for handling user reputation API interactions`             | —                   | 2026-10-08   |
+| `ParkShare-frontend` | `develop` | `ab23951` | `feat(rating): implement RatingsApiEndpoint for handling rating API interactions`                                | —                   | 2026-10-08   |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
@@ -700,15 +734,26 @@ Durante este sprint, los datos del perfil se consumen desde una API REST simulad
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-[COMPLETAR: describir como se desplego la Web Application (se despliega en github pages porsiaca) con los pasos realizados: compilación de producción con Angular (`dist/parkshare/browser`), configuración de la rama de publicación y activación del servicio.]
 
-Link de la Web Application: [COMPLETAR]
+
+  1.- ![Evidencia](../assets/chapter-05/environments-configuration.png)
+
+
+
+  2.- [Evidencia](../assets/chapter-05/link-web-app.png)
+
+
+  
+
+  3.- ![Evidencia](../assets/chapter-05/Frotend-view.png)
+
+Link de la Web Application:https://1asi0729-7793-parkshare.github.io/ParkShare-frontend/ 
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-[COMPLETAR: captura del grafico de contribuciones de GitHub del sprint y breve descripción de la participacion de cada uno.]
+Frotend:
 
-![Contribuciones Sprint 2](../report/assets/sprint2-contribuciones.png)
+![Evidencia de participacion Sprint 2](../assets/chapter-05/Frotend-Sprint3.png)
 
 ### 5.2.3. Sprint 3
 
