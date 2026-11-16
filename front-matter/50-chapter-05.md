@@ -752,8 +752,8 @@ A continuación, se presenta la distribución de roles según las responsabilida
 | **Palomino Vilcañaupa, Daril Johan** | `Daroh19`       |                 [X]                  |                  [A]                   |                [A]                 |                     [A]                     |               [C]                |
 | **Urviola Condori, Mateo Sebastian** | `BeyaminUv`     |                 [A]                  |                  [C]                   |                [L]                 |                     [C]                     |               [A]                |
 | **Checa Burga, Oscar Diego**         | `OscarCheca`    |                 [L]                  |                  [C]                   |                [A]                 |                     [A]                     |               [C]                |
-| **Tello Palacios, Fabrizio Rafael**  | `F4bris`        |                 [C]                  |                  [L]                   |                [L]                 |                     [A]                     |               [C]                |
-| **Yanac Flores, Gabriel Stefano**    | `u20241d945`    |                 [A]                  |                  [A]                   |                [C]                 |                     [C]                     |               [L]                |
+| **Tello Palacios, Fabrizio Rafael**  | `F4bris`        |                 [C]                  |                  [L]                   |                [L]                 |                     [A]                     |               [L]                |
+| **Yanac Flores, Gabriel Stefano**    | `u20241d945`    |                 [A]                  |                  [A]                   |                [C]                 |                     [X]                     |               [C]                |
 
 #### 5.2.3.3. Sprint Backlog 3
 
