@@ -1868,6 +1868,51 @@ Finalmente, calificó la facilidad de administración de una cochera con 4 de 5 
 
 ## 5.4. Video About-the-Product
 
+El Video About-the-Product de **ParkShare** presenta qué es la plataforma, cómo funciona nuestro modelo de negocio y qué puede hacer cada usuario dentro de la aplicación web. El video se construyó a partir de la versión final del frontend, mostrando las pantallas reales del producto ya funcional, conectadas al backend desplegado.
+
+### Público objetivo
+
+El video está dirigido a dos segmentos:
+
+1. **Visitantes del Landing Page**, que quieren entender el modelo de negocio de ParkShare y conocer las características principales del producto antes de registrarse: una plataforma que conecta a **propietarios con cocheras disponibles** con **conductores que necesitan estacionar** en Lima, Perú.
+   
+2. **Usuarios de la aplicación** (conductores y propietarios), que quieren aprender a realizar las tareas de cada rol: buscar y reservar una cochera, publicar y administrar espacios, cobrar ingresos, reportar incidencias o pedir ayuda rápida en caso de emergencia.
+
+### Tono de comunicación
+
+El video mantiene el mismo tono que nuestro producto: **cercano, claro y directo**. Se habla al usuario de "tú", se evita el lenguaje técnico y cada función se explica con una acción concreta ("busca una cochera cerca de ti", "publica tu espacio", "transfiere tus ingresos a tu banco"). Los textos en pantalla coinciden con los de la interfaz, que está disponible en **español e inglés**, de forma que lo que el espectador ve en el video es exactamente lo que encontrará al usar la aplicación.
+
+### Contenido del video
+
+| Momento | Contenido | Pantalla mostrada |
+|---|---|---|
+| Introducción | Qué es ParkShare y qué problema resuelve: conductores sin dónde estacionar y propietarios con espacios sin uso. | Pantalla principal y selector de rol (Conductor / Propietario) |
+| Modelo de negocio | El propietario publica su cochera y fija su tarifa por hora; el conductor reserva y paga por el tiempo usado. ParkShare cobra una **tarifa por servicio del 10%** sobre cada cobro. | Tarifa por hora y detalle de cobros |
+| Rol Conductor | Buscar cocheras en el mapa, ver sus características, reservar, seguir la reserva activa, consultar el historial, calificar al propietario y gestionar su perfil, vehículo y documentos verificados. | Buscar cochera, Mi reserva, Historial, Mi perfil |
+| Rol Propietario | Ver el panel con ingresos y reservas, aceptar o rechazar solicitudes, publicar y editar cocheras (horario, tarifa, pausar publicación) y revisar los ingresos acumulados con la opción de transferirlos a su banco. | Dashboard, Solicitudes, Mis cocheras, Mis ingresos |
+| Seguridad | Reporte de incidencias con foto y ubicación, y botón de **emergencia SOS** (incendio, robo, accidente u otro) que comparte la ubicación del propietario. | Incidencias y Emergencia SOS |
+| Cierre | Invitación a probar la plataforma y enlace al Landing Page. | Pantalla de cierre con el logo de ParkShare |
+
+### Testimonio de un usuario validado
+
+> *"Antes me costaba publicitar mi cochera y tener un seguimiento de mis ingresos sin tener que hacer un conteo manual diariamente, cuando descubrí ParkShare me encantó el diseño tan simple de la interfaz y la facilidad con la que se pueden acceder a las funciones, gracias a ParkShare ahora puedo tener un seguimiento de mis ingresos con exactitud y también  hacer un análisis de mis ganancias durante la semana o el mes."*
+>
+> — **Jilbert Rivera**, Propietario de una cochera, participante de las entrevistas de validación
+
+
+### Datos de publicación
+
+| Elemento | Detalle |
+|---|---|
+| **Duración (timing)** | 04:06 |
+| **Versión en Microsoft Stream** | [Ver video en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113310_upc_edu_pe/IQDJPErLZyVjQalCjndhOg0wAceyBGE5uWrxyyasJBYWUlI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pOpjFx) |
+| **Versión en YouTube** (incrustada en el Landing Page) | [Ver video en YouTube](https://www.youtube.com/watch?v=CDJ3CpESB9U) |
+| **Screenshot** | ver imagen siguiente |
+
+![Screenshot del Video About-the-Product de ParkShare](../report/assets/product-parkshared.png)
+
+*Figura: captura del Video en Youtube en About-the-Product de ParkShare.*
+
 
 
 
