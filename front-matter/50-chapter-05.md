@@ -1751,7 +1751,36 @@ Como principales oportunidades de mejora, propuso incorporar filtros avanzados (
 
 Finalmente, calificó la facilidad de uso con **4.5 de 5** y afirmó que utilizaría ParkShare en zonas congestionadas como Miraflores o San Isidro para ahorrar tiempo, siempre que cuente con buenas reseñas y precios competitivos.
 
+#### Entrevista de Validación 2 — Segmento 1: Conductores en Zonas Urbanas
 
+**Datos del entrevistado**
+
+- **Nombres y apellidos:** Wilson Zapata
+- **Edad:** 46 años
+- **Distrito:** Breña
+- **Segmento:** Conductores en Zonas Urbanas
+- **Inicio de la entrevista:** 00:00
+- **Duración aproximada:** 24 minutos 52 segundos
+- **URL del video:** https://youtu.be/fpRhEHXe7mE
+
+<div align="center">
+  <img src="../assets/chapter-05/validation-interview-wilson.png" alt="Entrevista de validación a Wilson Zapata">
+  <p>
+    <i><b>Figura X.</b> Entrevista de validación realizada a Wilson Zapata, participante del segmento Conductores en Zonas Urbanas</i>
+  </p>
+</div>
+
+##### Resumen de la entrevista
+
+Durante la sesión con el segmento de conductores, se presentó  el Landing Page de ParkShare, explicando el funcionamiento del proyecto y su calculadora de tarifas. Posteriormente, el entrevistado —Wilson Zapata, de 46 años y residente en Breña— interactuó con la plataforma revisando el proceso de búsqueda, registro de vehículo y reserva de espacios.
+
+El participante realizo la observación en ajustar la lista de opciones para seleccionar en tipo de vehículo, ya que no se encuentra la opción de camioneta. Además, sugirió que se pueda visualizar el tamaño del espacio de estacionamiento para poder reservarlo según el tipo de vehículo. Además en la seccion de registrar o actualizar su vehiculo de su perfil recomienda establecer un formato en el campo de la placa de vehiculo con el guion fijado y un límite de caracteres para una placa de vehiculo de acuerdo a las normas del MTC, y que las mayusculas al introducir la placa del vehiculo se encuentren en mayúsculas. Además, en el campo de modelos de vehiculo deberia haber una tabla estándar para los modelos de vehiculos. También recomendó que se pueda visualizar la cantidad de cocheras disponibles en el mapa sin necesidad de reservarlas, para poder elegir la mejor opción según su ubicación y precio. Además que en el mapa digital se muestren los precios diferenciados de las cocheras con un juego de colores para poder diferenciar los precios más económicos de los más caros.
+
+En cuanto al proceso de reserva y gestión de cuenta, encontró los pasos claros y valoró poder registrar los datos de su vehículo. No obstante, recomendó mostrar un resumen del costo total antes de pagar, separar las reservas por estado (activas, próximas y pasadas), explicar mejor la verificación de identidad y las políticas de cancelación, y añadir secciones de soporte, métodos de pago y preguntas frecuentes.
+
+Finalmente, calificó la facilidad de uso con **4 de 5** y afirmó que utilizaría y recomendaria ParkShare diariamente porque frecuentemente usa este tipo de servicios si levantamos las observaciones clave como mostrar en el mapa la cantidad de cocheras disponibles sin reservar en una posicion del mapa.
+
+---
 #### Entrevista de Validación 1 — Segmento 2: Propietarios de Espacios y Negocios
 
 **Datos del entrevistado**
@@ -1789,8 +1818,34 @@ Como principal oportunidad de mejora, propuso incorporar estadísticas más deta
 
 Finalmente, calificó la facilidad de administración de una cochera con **4 de 5** y afirmó que utilizaría ParkShare para ofrecer un espacio disponible, especialmente como una alternativa para aprovechar una cochera que permanece vacía durante determinadas horas y generar ingresos adicionales.
 
+#### Entrevista de Validación 2 — Segmento 2: Propietarios de Espacios y Negocios
 
+**Datos del entrevistado**
 
+- **Nombres y apellidos:** Jilbert Rivera
+- **Edad:**  50 años
+- **Distrito:** Jesús María
+- **Segmento:** Propietarios de Espacios y Negocios
+- **Inicio de la entrevista:** 00:00
+- **Duración aproximada:** 14 minutos 10 segundos
+- **URL del video:** https://youtu.be/kjyZiVDKnZY
+
+<div align="center">
+  <img src="../assets/chapter-05/validation-interview-jilbert.png" alt="Entrevista de validación a Jilbert Rivera">
+  <p>
+    <i><b>Figura X.</b> Entrevista de validación realizada a Jilbert Rivera, participante del segmento Propietarios de Espacios y Negocios.</i>
+  </p>
+</div>
+
+##### Resumen de la entrevista
+
+Durante la sesión se presentó inicialmente el Landing Page de ParkShare, explicando la propuesta de valor de la plataforma para conductores y propietarios. Posteriormente se realizó un recorrido por la Web Application desde la perspectiva del propietario, mostrando el dashboard, la administración de cocheras, el formulario para publicar un nuevo espacio y la sección destinada a ingresos y transferencias.
+
+Entre sus observaciones el entrevistado indicó que la información mostrada en el dashboard es clara pero que en la organización de las opciones para administrar una cochera consideremos realizar mayor contraste entre las opciones para editar la tarifa del uso de la cochera por hora y cambiar de horarios o asignarle a un solo boton de editar el poder modificar todos los campos del registro de una cochera. Asimismo, consideró adecuado el proceso de publicación de un nuevo espacio, destacando la importancia de incluir fotografías y detalles sobre las características del estacionamiento.
+
+La sección de ingresos también fue percibida positivamente debido a la separación entre balance y transacciones, así como a la posibilidad de solicitar transferencias desde la misma plataforma.
+
+Finalmente, calificó la facilidad de administración de una cochera con 4 de 5 y afirmó que utilizaría ParkShare como una alternativa para aprovechar una cochera que permanece vacía durante determinadas horas y generar ingresos adicionales.
 **Escala utilizada (criterio de evaluación):**
 - 1 = Cumplimiento muy bajo (requiere rediseño)
 - 2 = Cumplimiento bajo (requiere correcciones mayores)
