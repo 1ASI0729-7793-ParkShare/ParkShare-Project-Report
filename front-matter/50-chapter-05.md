@@ -1846,6 +1846,11 @@ Entre sus observaciones el entrevistado indicó que la información mostrada en 
 La sección de ingresos también fue percibida positivamente debido a la separación entre balance y transacciones, así como a la posibilidad de solicitar transferencias desde la misma plataforma.
 
 Finalmente, calificó la facilidad de administración de una cochera con 4 de 5 y afirmó que utilizaría ParkShare como una alternativa para aprovechar una cochera que permanece vacía durante determinadas horas y generar ingresos adicionales.
+
+---
+
+### 5.3.3. Evaluaciones según heurísticas
+
 **Escala utilizada (criterio de evaluación):**
 - 1 = Cumplimiento muy bajo (requiere rediseño)
 - 2 = Cumplimiento bajo (requiere correcciones mayores)
