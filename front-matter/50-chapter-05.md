@@ -1773,7 +1773,26 @@ Como principal oportunidad de mejora, propuso incorporar estadísticas más deta
 
 Finalmente, calificó la facilidad de administración de una cochera con **4 de 5** y afirmó que utilizaría ParkShare para ofrecer un espacio disponible, especialmente como una alternativa para aprovechar una cochera que permanece vacía durante determinadas horas y generar ingresos adicionales.
 
+#### Entrevista de Validación 2 — Segmento 2: Propietarios de Espacios y Negocios
 
+**Datos del entrevistado**
+
+- **Nombres y apellidos:** Jilbert Rivera
+- **Edad:**  50 años
+- **Distrito:** Jesús María
+- **Segmento:** Propietarios de Espacios y Negocios
+- **Inicio de la entrevista:** 00:00
+- **Duración aproximada:** 14 minutos 10 segundos
+- **URL del video:** https://youtu.be/kjyZiVDKnZY
+
+<div align="center">
+  <img src="../assets/chapter-05/validation-interview-jilbert.png" alt="Entrevista de validación a Jilbert Rivera">
+  <p>
+    <i><b>Figura X.</b> Entrevista de validación realizada a Jilbert Rivera, participante del segmento Propietarios de Espacios y Negocios.</i>
+  </p>
+</div>
+
+##### Resumen de la entrevista
 
 **Escala utilizada (criterio de evaluación):**
 - 1 = Cumplimiento muy bajo (requiere rediseño)
