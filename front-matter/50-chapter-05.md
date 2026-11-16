@@ -1746,10 +1746,8 @@ Finalmente, calificó la facilidad de administración de una cochera con **4 de 
 
 
 
-
-
-
-
-### 5.3.3. Evaluaciones según heurísticas
-
 ## 5.4. Video About-the-Product
+
+
+
+
