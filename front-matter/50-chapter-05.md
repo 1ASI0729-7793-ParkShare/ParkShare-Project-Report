@@ -1794,6 +1794,13 @@ Finalmente, calificó la facilidad de administración de una cochera con **4 de 
 
 ##### Resumen de la entrevista
 
+Durante la sesión se presentó inicialmente el Landing Page de ParkShare, explicando la propuesta de valor de la plataforma para conductores y propietarios. Posteriormente se realizó un recorrido por la Web Application desde la perspectiva del propietario, mostrando el dashboard, la administración de cocheras, el formulario para publicar un nuevo espacio y la sección destinada a ingresos y transferencias.
+
+Entre sus observaciones el entrevistado indicó que la información mostrada en el dashboard es clara pero que en la organización de las opciones para administrar una cochera consideremos realizar mayor contraste entre las opciones para editar la tarifa del uso de la cochera por hora y cambiar de horarios o asignarle a un solo boton de editar el poder modificar todos los campos del registro de una cochera. Asimismo, consideró adecuado el proceso de publicación de un nuevo espacio, destacando la importancia de incluir fotografías y detalles sobre las características del estacionamiento.
+
+La sección de ingresos también fue percibida positivamente debido a la separación entre balance y transacciones, así como a la posibilidad de solicitar transferencias desde la misma plataforma.
+
+Finalmente, calificó la facilidad de administración de una cochera con 4 de 5 y afirmó que utilizaría ParkShare como una alternativa para aprovechar una cochera que permanece vacía durante determinadas horas y generar ingresos adicionales.
 **Escala utilizada (criterio de evaluación):**
 - 1 = Cumplimiento muy bajo (requiere rediseño)
 - 2 = Cumplimiento bajo (requiere correcciones mayores)
